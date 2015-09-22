@@ -1,0 +1,6 @@
+D:\Programirane\Visual\HomeworkArraysListsStacksQueues\01.SortArrayOfNumbers\bin\Debug\01.SortArrayOfNumbers.exe.config
+D:\Programirane\Visual\HomeworkArraysListsStacksQueues\01.SortArrayOfNumbers\bin\Debug\01.SortArrayOfNumbers.exe
+D:\Programirane\Visual\HomeworkArraysListsStacksQueues\01.SortArrayOfNumbers\bin\Debug\01.SortArrayOfNumbers.pdb
+D:\Programirane\Visual\HomeworkArraysListsStacksQueues\01.SortArrayOfNumbers\obj\Debug\01.SortArrayOfNumbers.csprojResolveAssemblyReference.cache
+D:\Programirane\Visual\HomeworkArraysListsStacksQueues\01.SortArrayOfNumbers\obj\Debug\01.SortArrayOfNumbers.exe
+D:\Programirane\Visual\HomeworkArraysListsStacksQueues\01.SortArrayOfNumbers\obj\Debug\01.SortArrayOfNumbers.pdb

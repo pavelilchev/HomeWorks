@@ -1,0 +1,6 @@
+D:\Programirane\Visual\HomeworkMethods\01.BiggerNumber\bin\Debug\01.BiggerNumber.exe.config
+D:\Programirane\Visual\HomeworkMethods\01.BiggerNumber\bin\Debug\01.BiggerNumber.exe
+D:\Programirane\Visual\HomeworkMethods\01.BiggerNumber\bin\Debug\01.BiggerNumber.pdb
+D:\Programirane\Visual\HomeworkMethods\01.BiggerNumber\obj\Debug\01.BiggerNumber.csprojResolveAssemblyReference.cache
+D:\Programirane\Visual\HomeworkMethods\01.BiggerNumber\obj\Debug\01.BiggerNumber.exe
+D:\Programirane\Visual\HomeworkMethods\01.BiggerNumber\obj\Debug\01.BiggerNumber.pdb

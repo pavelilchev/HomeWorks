@@ -1,0 +1,5 @@
+D:\Programirane\Visual\HomeworkMethods\02.LastDigitOfNumber\bin\Debug\02.LastDigitOfNumber.exe.config
+D:\Programirane\Visual\HomeworkMethods\02.LastDigitOfNumber\bin\Debug\02.LastDigitOfNumber.exe
+D:\Programirane\Visual\HomeworkMethods\02.LastDigitOfNumber\bin\Debug\02.LastDigitOfNumber.pdb
+D:\Programirane\Visual\HomeworkMethods\02.LastDigitOfNumber\obj\Debug\02.LastDigitOfNumber.exe
+D:\Programirane\Visual\HomeworkMethods\02.LastDigitOfNumber\obj\Debug\02.LastDigitOfNumber.pdb

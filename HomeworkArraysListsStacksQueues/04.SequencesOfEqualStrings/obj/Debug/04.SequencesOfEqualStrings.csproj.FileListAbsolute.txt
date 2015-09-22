@@ -1,0 +1,5 @@
+D:\Programirane\Visual\HomeworkArraysListsStacksQueues\04.SequencesOfEqualStrings\bin\Debug\04.SequencesOfEqualStrings.exe.config
+D:\Programirane\Visual\HomeworkArraysListsStacksQueues\04.SequencesOfEqualStrings\bin\Debug\04.SequencesOfEqualStrings.exe
+D:\Programirane\Visual\HomeworkArraysListsStacksQueues\04.SequencesOfEqualStrings\bin\Debug\04.SequencesOfEqualStrings.pdb
+D:\Programirane\Visual\HomeworkArraysListsStacksQueues\04.SequencesOfEqualStrings\obj\Debug\04.SequencesOfEqualStrings.exe
+D:\Programirane\Visual\HomeworkArraysListsStacksQueues\04.SequencesOfEqualStrings\obj\Debug\04.SequencesOfEqualStrings.pdb

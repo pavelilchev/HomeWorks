@@ -1,0 +1,5 @@
+D:\Programirane\Visual\HomeworkMethods\05.ReverseNumber\bin\Debug\05.ReverseNumber.exe.config
+D:\Programirane\Visual\HomeworkMethods\05.ReverseNumber\bin\Debug\05.ReverseNumber.exe
+D:\Programirane\Visual\HomeworkMethods\05.ReverseNumber\bin\Debug\05.ReverseNumber.pdb
+D:\Programirane\Visual\HomeworkMethods\05.ReverseNumber\obj\Debug\05.ReverseNumber.exe
+D:\Programirane\Visual\HomeworkMethods\05.ReverseNumber\obj\Debug\05.ReverseNumber.pdb

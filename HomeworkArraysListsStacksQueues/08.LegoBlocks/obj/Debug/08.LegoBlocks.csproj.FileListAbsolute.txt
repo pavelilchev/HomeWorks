@@ -1,0 +1,6 @@
+D:\Programirane\Visual\HomeworkArraysListsStacksQueues\08.LegoBlocks\bin\Debug\08.LegoBlocks.exe.config
+D:\Programirane\Visual\HomeworkArraysListsStacksQueues\08.LegoBlocks\bin\Debug\08.LegoBlocks.exe
+D:\Programirane\Visual\HomeworkArraysListsStacksQueues\08.LegoBlocks\bin\Debug\08.LegoBlocks.pdb
+D:\Programirane\Visual\HomeworkArraysListsStacksQueues\08.LegoBlocks\obj\Debug\08.LegoBlocks.csprojResolveAssemblyReference.cache
+D:\Programirane\Visual\HomeworkArraysListsStacksQueues\08.LegoBlocks\obj\Debug\08.LegoBlocks.exe
+D:\Programirane\Visual\HomeworkArraysListsStacksQueues\08.LegoBlocks\obj\Debug\08.LegoBlocks.pdb

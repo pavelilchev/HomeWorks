@@ -1,0 +1,5 @@
+D:\Programirane\Visual\HomeworkArraysListsStacksQueues\10.PythagoreanNumbers\bin\Debug\10.PythagoreanNumbers.exe.config
+D:\Programirane\Visual\HomeworkArraysListsStacksQueues\10.PythagoreanNumbers\bin\Debug\10.PythagoreanNumbers.exe
+D:\Programirane\Visual\HomeworkArraysListsStacksQueues\10.PythagoreanNumbers\bin\Debug\10.PythagoreanNumbers.pdb
+D:\Programirane\Visual\HomeworkArraysListsStacksQueues\10.PythagoreanNumbers\obj\Debug\10.PythagoreanNumbers.exe
+D:\Programirane\Visual\HomeworkArraysListsStacksQueues\10.PythagoreanNumbers\obj\Debug\10.PythagoreanNumbers.pdb
