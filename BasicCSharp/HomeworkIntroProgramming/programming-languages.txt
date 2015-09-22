@@ -1,0 +1,20 @@
+1. Java
+Topping the Mashable's most popular programming languages list is Java. Java is seen as the programming language of choice for IoT, enterprise architecture, and cloud computing. 
+The language has also been ranked on top by efinancialcareers's survey for most in-demand programming languages on Wall Street in 2015. 
+Java is also at the central of a patent battle between Google and Oracle. Oracle sued Google in 2010, claiming that Google had improperly incorporated parts of Java into Android.
+
+2. JavaScript
+Next on the list is JavaScript. Widely regarded as the language of the web, it is used to add interactivity to web pages. The language supports all major web browsers including Safari, Internet Explorer and Firefox.
+
+3. C#
+Third on the list is Microsoft's C#. According to the company, "You can use C# to create Windows client applications, XML Web services, distributed components, client-server applications, database applications, and much, much more. 
+Visual C# provides an advanced code editor, convenient user interface designers, integrated debugger, and many other tools to make it easier to develop applications based on the C# language and the .NET Framework."
+
+4. PHP
+Next on the list is PHP, the language which forms the backbone of many present-day content management systems including WordPress. 
+The language regarded as an essential tool for building modern web applications was originally created by Rasmus Lerdorf in 1994.
+
+5. C++
+The fifth hottest programming language to learn in 2015 is C++. A general purpose language, it is considered as the go-to language for high-volume/high frequency trading. 
+The language also figures in prominently in efinancialcareers's survey. "Due to the high cost of moving to new technologies there will continue to be significant demand for those who can programme in languages compatible with the legacy environment,” says the survey quoting Gina Schiller, vice president at Jay Gaines & Company. 
+The language has also been standardized by the International Organization for Standardization (ISO).
