@@ -1,5 +1,0 @@
-D:\Programirane\Visual\HomeworkArraysListsStacksQueues\02.SortArrayOfNumbersUsingSelectionSort\bin\Debug\02.SortArrayOfNumbersUsingSelectionSort.exe.config
-D:\Programirane\Visual\HomeworkArraysListsStacksQueues\02.SortArrayOfNumbersUsingSelectionSort\bin\Debug\02.SortArrayOfNumbersUsingSelectionSort.exe
-D:\Programirane\Visual\HomeworkArraysListsStacksQueues\02.SortArrayOfNumbersUsingSelectionSort\bin\Debug\02.SortArrayOfNumbersUsingSelectionSort.pdb
-D:\Programirane\Visual\HomeworkArraysListsStacksQueues\02.SortArrayOfNumbersUsingSelectionSort\obj\Debug\02.SortArrayOfNumbersUsingSelectionSort.exe
-D:\Programirane\Visual\HomeworkArraysListsStacksQueues\02.SortArrayOfNumbersUsingSelectionSort\obj\Debug\02.SortArrayOfNumbersUsingSelectionSort.pdb

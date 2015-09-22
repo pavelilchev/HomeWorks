@@ -1,6 +1,0 @@
-D:\Programirane\Visual\HomeworkArraysListsStacksQueues\06.SubsetSums\bin\Debug\06.SubsetSums.exe.config
-D:\Programirane\Visual\HomeworkArraysListsStacksQueues\06.SubsetSums\bin\Debug\06.SubsetSums.exe
-D:\Programirane\Visual\HomeworkArraysListsStacksQueues\06.SubsetSums\bin\Debug\06.SubsetSums.pdb
-D:\Programirane\Visual\HomeworkArraysListsStacksQueues\06.SubsetSums\obj\Debug\06.SubsetSums.csprojResolveAssemblyReference.cache
-D:\Programirane\Visual\HomeworkArraysListsStacksQueues\06.SubsetSums\obj\Debug\06.SubsetSums.exe
-D:\Programirane\Visual\HomeworkArraysListsStacksQueues\06.SubsetSums\obj\Debug\06.SubsetSums.pdb

@@ -1,6 +1,0 @@
-D:\Programirane\Visual\HomeworkLinearDataStructuresLists\06.ReversedList\bin\Debug\06.ReversedList.exe.config
-D:\Programirane\Visual\HomeworkLinearDataStructuresLists\06.ReversedList\bin\Debug\06.ReversedList.exe
-D:\Programirane\Visual\HomeworkLinearDataStructuresLists\06.ReversedList\bin\Debug\06.ReversedList.pdb
-D:\Programirane\Visual\HomeworkLinearDataStructuresLists\06.ReversedList\obj\Debug\06.ReversedList.exe
-D:\Programirane\Visual\HomeworkLinearDataStructuresLists\06.ReversedList\obj\Debug\06.ReversedList.pdb
-D:\Programirane\Visual\HomeworkLinearDataStructuresLists\06.ReversedList\obj\Debug\06.ReversedList.csprojResolveAssemblyReference.cache

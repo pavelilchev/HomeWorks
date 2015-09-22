@@ -1,6 +1,0 @@
-D:\Programirane\Visual\HomeworkArraysListsStacksQueues\05.LongestIncreasingSequence\bin\Debug\05.LongestIncreasingSequence.exe.config
-D:\Programirane\Visual\HomeworkArraysListsStacksQueues\05.LongestIncreasingSequence\bin\Debug\05.LongestIncreasingSequence.exe
-D:\Programirane\Visual\HomeworkArraysListsStacksQueues\05.LongestIncreasingSequence\bin\Debug\05.LongestIncreasingSequence.pdb
-D:\Programirane\Visual\HomeworkArraysListsStacksQueues\05.LongestIncreasingSequence\obj\Debug\05.LongestIncreasingSequence.csprojResolveAssemblyReference.cache
-D:\Programirane\Visual\HomeworkArraysListsStacksQueues\05.LongestIncreasingSequence\obj\Debug\05.LongestIncreasingSequence.exe
-D:\Programirane\Visual\HomeworkArraysListsStacksQueues\05.LongestIncreasingSequence\obj\Debug\05.LongestIncreasingSequence.pdb

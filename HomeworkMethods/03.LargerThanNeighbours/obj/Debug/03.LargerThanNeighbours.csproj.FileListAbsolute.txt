@@ -1,5 +1,0 @@
-D:\Programirane\Visual\HomeworkMethods\03.LargerThanNeighbours\bin\Debug\03.LargerThanNeighbours.exe.config
-D:\Programirane\Visual\HomeworkMethods\03.LargerThanNeighbours\bin\Debug\03.LargerThanNeighbours.exe
-D:\Programirane\Visual\HomeworkMethods\03.LargerThanNeighbours\bin\Debug\03.LargerThanNeighbours.pdb
-D:\Programirane\Visual\HomeworkMethods\03.LargerThanNeighbours\obj\Debug\03.LargerThanNeighbours.exe
-D:\Programirane\Visual\HomeworkMethods\03.LargerThanNeighbours\obj\Debug\03.LargerThanNeighbours.pdb

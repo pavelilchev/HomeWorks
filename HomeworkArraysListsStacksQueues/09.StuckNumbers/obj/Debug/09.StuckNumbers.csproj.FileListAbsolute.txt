@@ -1,6 +1,0 @@
-D:\Programirane\Visual\HomeworkArraysListsStacksQueues\09.StuckNumbers\bin\Debug\09.StuckNumbers.exe.config
-D:\Programirane\Visual\HomeworkArraysListsStacksQueues\09.StuckNumbers\bin\Debug\09.StuckNumbers.exe
-D:\Programirane\Visual\HomeworkArraysListsStacksQueues\09.StuckNumbers\bin\Debug\09.StuckNumbers.pdb
-D:\Programirane\Visual\HomeworkArraysListsStacksQueues\09.StuckNumbers\obj\Debug\09.StuckNumbers.csprojResolveAssemblyReference.cache
-D:\Programirane\Visual\HomeworkArraysListsStacksQueues\09.StuckNumbers\obj\Debug\09.StuckNumbers.exe
-D:\Programirane\Visual\HomeworkArraysListsStacksQueues\09.StuckNumbers\obj\Debug\09.StuckNumbers.pdb
