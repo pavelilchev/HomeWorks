@@ -1,38 +1,15 @@
 package Problem1Geometry.Shapes;
-
-import java.util.ArrayList;
-
-public class Cuboid extends SpaceShapes {
-
-    private double x;
-    private double y;
-    private double z;
+public class Cuboid extends SpaceShape {
     private double width;
     private double height;
     private double depth;
 
-    public Cuboid(double x, double y, double z, double width, double height, double depth) {
-        super();
-        this.x = x;
-        this.y = y;
-        this.z = z;
-        this.width = width;
-        this.height = height;
-        this.depth = depth;
-        initVertices();
-    }
-
-    private ArrayList<Point> initVertices() {
-        this.verticles.add(new Point(this.x, this.y, this.z));
-        this.verticles.add(new Point(this.x + this.width, this.y, this.z));
-        this.verticles.add(new Point(this.x, this.y + this.height, this.z));
-        this.verticles.add(new Point(this.x + this.width, this.y + this.height, this.z));
-        this.verticles.add(new Point(this.x, this.y, this.z + this.depth));
-        this.verticles.add(new Point(this.x + this.width, this.y, this.z + this.depth));
-        this.verticles.add(new Point(this.x, this.y + this.height, this.z + this.depth));
-        this.verticles.add(new Point(this.x + this.width, this.y + this.height, this.z + this.depth));
-
-        return verticles;
+    public Cuboid(double x, double y, double z,
+                  double width, double height, double depth) {
+        super(x, y, z);
+        this.setWidth(width);
+        this.setHeight(height);
+        this.setDepth(depth);
     }
 
     @Override
@@ -47,12 +24,39 @@ public class Cuboid extends SpaceShapes {
         return this.width * this.height * this.depth;
     }
 
-    @Override
-    public String toString() {
-        return "Cuboid" + "\n"+
-                "Vertices " + verticles.toString() + "\n"+
-                "Volume: " + getVolume() +"\n"+
-                "Area: " + getArea() ;
+    public double getWidth() {
+        return this.width;
+    }
+
+    public void setWidth(double width) {
+        if (width < 0) {
+            throw new IllegalArgumentException("width cannot be negative");
+        }
+
+        this.width = width;
+    }
+
+    public double getHeight() {
+        return this.height;
+    }
+
+    public void setHeight(double height) {
+        if (height < 0) {
+            throw new IllegalArgumentException("height cannot be negative");
+        }
+
+        this.height = height;
+    }
+
+    public double getDepth() {
+        return this.depth;
+    }
+
+    public void setDepth(double depth) {
+        if (depth < 0) {
+            throw new IllegalArgumentException("depth cannot be negative");
+        }
+
+        this.depth = depth;
     }
 }
-

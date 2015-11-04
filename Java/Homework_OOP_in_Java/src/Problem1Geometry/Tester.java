@@ -9,28 +9,16 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Geometry {
-    public static void main(String[] args) {
-        Rectangle rectangle = new Rectangle(1, 1, 5, 4);
-        //System.out.println(rectangle);
-        Triangle triangle = new Triangle(1,1,2,2,1,2);
-        //System.out.println(triangle);
-        Circle circle = new Circle(0,0, 3);
-       // System.out.println(circle);
-        Sphere sphere = new Sphere(1, 1, 2, 3);
-       // System.out.println(sphere);
-        Cuboid cuboid = new Cuboid(0,0,0,2,3,4);
-       // System.out.println(cuboid);
-        SquarePyramid squarePyramid = new SquarePyramid(0,0,0,2,3,4);
-       // System.out.println(squarePyramid);
+public class Tester {
 
+    public static void main(String[] args) {
         Shape[] shapeCollection = new Shape[6];
-        shapeCollection[0] = triangle;
-        shapeCollection[1] = circle;
-        shapeCollection[2] = rectangle;
-        shapeCollection[3] = squarePyramid;
-        shapeCollection[4] = cuboid;
-        shapeCollection[5] = sphere;
+        shapeCollection[0] = new Triangle(1, -7, 3, 11, 20, 30);
+        shapeCollection[1] = new Circle(122, -17, 13);
+        shapeCollection[2] = new Rectangle(10, -70, 3, 22);
+        shapeCollection[3] = new SquarePyramid(1, -7, 3, 11, 1, 2);
+        shapeCollection[4] = new Cuboid(1, -7, 3, 11, 20, 30);
+        shapeCollection[5] = new Sphere(97, -12, 3, 50);
 
         for (Shape shape : shapeCollection) {
             //System.out.println(shape);

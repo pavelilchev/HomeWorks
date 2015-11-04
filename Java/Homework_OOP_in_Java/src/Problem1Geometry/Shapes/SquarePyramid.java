@@ -1,36 +1,21 @@
 package Problem1Geometry.Shapes;
 
-import java.util.ArrayList;
-
-public class SquarePyramid extends SpaceShapes {
-
-    private double x;
-    private double y;
-    private double z;
-    private double width;
+public class SquarePyramid extends SpaceShape {
+    private double baseWidth;
     private double height;
     private double slantHeight;
 
-    public SquarePyramid(double x, double y, double z, double width, double height, double slantHeight) {
-        super();
-        this.x = x;
-        this.y = y;
-        this.z = z;
-        this.width = width;
-        this.height = height;
-        this.slantHeight = slantHeight;
-        initVertices();
-    }
-
-    private ArrayList<Point> initVertices() {
-        this.verticles.add(new Point(this.x, this.y, this.z));
-
-        return verticles;
+    public SquarePyramid(double x, double y, double z,
+                         double baseWidth, double height, double slantHeight) {
+        super(x, y, z);
+        this.setBaseWidth(baseWidth);
+        this.setHeight(height);
+        this.setSlantHeight(slantHeight);
     }
 
     @Override
     public double getArea() {
-        double faceArea = (1.0 / 2.0) * (4 * this.width) * this.height;
+        double faceArea = (1.0 / 2.0) * (4 * this.baseWidth) * this.height;
         double baseArea = this.getBaseArea();
 
         return faceArea + baseArea;
@@ -42,13 +27,42 @@ public class SquarePyramid extends SpaceShapes {
     }
 
     private double getBaseArea() {
-        return this.width * this.width;
+        return this.baseWidth * this.baseWidth;
     }
 
-    public String toString() {
-        return "SquarePyramid" + "\n"+
-                "Vertices " + verticles.toString() + "\n"+
-                "Volume: " + getVolume() +"\n"+
-                "Area: " + getArea() ;
+    public double getBaseWidth() {
+        return this.baseWidth;
+    }
+
+    public void setBaseWidth(double baseWidth) {
+        if (baseWidth < 0) {
+            throw new IllegalArgumentException("base width cannot be negative");
+        }
+
+        this.baseWidth = baseWidth;
+    }
+
+    public double getHeight() {
+        return this.height;
+    }
+
+    public void setHeight(double height) {
+        if (height < 0) {
+            throw new IllegalArgumentException("height cannot be negative");
+        }
+
+        this.height = height;
+    }
+
+    public double getSlantHeight() {
+        return this.slantHeight;
+    }
+
+    public void setSlantHeight(double slantHeight) {
+        if (slantHeight < 0) {
+            throw new IllegalArgumentException("slantHeight cannot be negative");
+        }
+
+        this.slantHeight = slantHeight;
     }
 }

@@ -1,30 +1,13 @@
 package Problem1Geometry.Shapes;
 
-import java.awt.*;
-import java.util.ArrayList;
-
 public class Rectangle extends PlaneShape {
+    private double width;
+    private double height;
 
-    private int x;
-    private int y;
-    private int width;
-    private int height;
-
-    public Rectangle(int x, int y, int width, int height) {
-        super();
-        this.x = x;
-        this.y = y;
-        this.width = width;
-        this.height = height;
-        initVertices();
-    }
-
-    private ArrayList<Point> initVertices() {
-        this.verticles.add(new Point(this.x, this.y));
-        this.verticles.add(new Point(this.x + this.width, this.y));
-        this.verticles.add(new Point(this.x, this.y + this.height));
-        this.verticles.add(new Point(this.x + this.width, this.y + this.height));
-        return verticles;
+    public Rectangle(double x, double y, double width, double height) {
+        super(x, y);
+        this.setWidth(width);
+        this.setHeight(height);
     }
 
     @Override
@@ -34,14 +17,30 @@ public class Rectangle extends PlaneShape {
 
     @Override
     public double getPerimeter() {
-        return 2 * this.width + 2 * this.height;
+        return (2 * this.width) + (2 * this.height);
     }
 
-    @Override
-    public String toString() {
-        return "Rectangle" + "\n"+
-                "Vertices " + verticles.toString() + "\n"+
-                 "Perimeter: " + getPerimeter() +"\n"+
-                "Area: " + getArea() ;
+    public double getWidth() {
+        return this.width;
+    }
+
+    public void setWidth(double width) {
+        if (width < 0) {
+            throw new IllegalArgumentException("width cannot be negative");
+        }
+
+        this.width = width;
+    }
+
+    public double getHeight() {
+        return this.height;
+    }
+
+    public void setHeight(double height) {
+        if (height < 0) {
+            throw new IllegalArgumentException("height cannot be negative");
+        }
+
+        this.height = height;
     }
 }

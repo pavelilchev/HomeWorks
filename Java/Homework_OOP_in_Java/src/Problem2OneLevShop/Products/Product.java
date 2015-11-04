@@ -1,52 +1,75 @@
 package Problem2OneLevShop.Products;
 
-import Problem2OneLevShop.AgeRestriction;
-import Problem2OneLevShop.Interfaces.Buyable;
+import Problem2OneLevShop.Contracts.Buyable;
+import Problem2OneLevShop.Products.AgeRestriction;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public abstract class Product implements Buyable {
-    private String name;
-    private double price;
-    private int quantity;
-    AgeRestriction restriction;
+	protected String name;
+	protected BigDecimal price;
+	protected int quantity;
+	public static AgeRestriction ageRestrictionLevel;
+	
+	public Product(String name, double price, int quantity,
+			AgeRestriction ageRestrictionLevel) {
+		super();
+		this.setName(name);
+		this.setPrice(new BigDecimal(price));
+		this.setQuantity(quantity);
+		this.ageRestrictionLevel = ageRestrictionLevel;
+	}
+	
+	@Override
+	public String toString() {
+		return "Name: " + name +
+				"\nPrice: " + price.setScale(2, RoundingMode.FLOOR) +
+				"\nQuantity: " + quantity +
+				"\nAge Restriction Level: " + ageRestrictionLevel + "\n";
+	}
 
-    public Product(String name, double price, int quantity, AgeRestriction restriction) {
-        this.name = name;
-        this.price = price;
-        this.quantity = quantity;
-        this.restriction = restriction;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    @Override
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
-
-    public AgeRestriction getRestriction() {
-        return restriction;
-    }
-
-    public void setRestriction(AgeRestriction restriction) {
-        this.restriction = restriction;
-    }
+	public String getName() {
+		return this.name;
+	}
+	
+	public void setName(String name) {
+		if (name.isEmpty() || name == null) {
+			throw new IllegalArgumentException("product name cannot be empty or null");
+		}
+		
+		this.name = name;
+	}
+	
+	public BigDecimal getPrice() {
+		return this.price;
+	}
+	
+	public void setPrice(BigDecimal price) {
+		if (price.compareTo(new BigDecimal(0.0)) == -1) {
+			throw new IllegalArgumentException("price cannot be negative");
+		}
+		
+		this.price = price;
+	}
+	
+	public int getQuantity() {
+		return this.quantity;
+	}
+	
+	public void setQuantity(int quantity) {
+		if (quantity < 0) {
+			throw new IllegalArgumentException("quantity cannot be negative");
+		}
+		
+		this.quantity = quantity;
+	}
+	
+	public AgeRestriction getAgeRestrictionLevel() {
+		return this.ageRestrictionLevel;
+	}
+	
+	public void setAgeRestrictionLevel(AgeRestriction ageRestrictionLevel) {
+		this.ageRestrictionLevel = ageRestrictionLevel;
+	}
 }

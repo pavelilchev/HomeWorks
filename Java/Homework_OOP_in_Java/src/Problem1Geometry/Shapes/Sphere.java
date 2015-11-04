@@ -1,42 +1,32 @@
 package Problem1Geometry.Shapes;
 
-import java.util.ArrayList;
-
-public class Sphere extends SpaceShapes {
-private double vortexX;
-private double vortexY;
-private double vortexZ;
+public class Sphere extends SpaceShape {
     private double radius;
 
-    public Sphere(int vortexX, int vortexY, int vortexZ, double radius) {
-        super();
-        this.vortexX = vortexX;
-        this.vortexY = vortexY;
-        this.vortexZ = vortexZ;
-        this.radius = radius;
-        initVertices();
-    }
-
-    private ArrayList<Point> initVertices() {
-        verticles.add(new Point(vortexX, vortexY, vortexZ));
-        return verticles;
+    public Sphere(double x, double y, double z, double radius) {
+        super(x, y, z);
+        this.setRadius(radius);
     }
 
     @Override
     public double getArea() {
-        return 4*Math.PI*radius*radius;
+        return 4.0 * Math.PI * Math.pow(this.radius, 2);
     }
 
     @Override
     public double getVolume() {
-        return 4/3*Math.PI*radius*radius*radius;
+        return (4.0 / 3.0) * Math.PI * Math.pow(this.radius, 3);
     }
 
-    @Override
-    public String toString() {
-        return "Sphere" + "\n"+
-                "Vertices " + verticles.toString() + "\n"+
-                "Volume: " + getVolume() +"\n"+
-                "Area: " + getArea() ;
+    public double getRadius() {
+        return this.radius;
+    }
+
+    public void setRadius(double radius) {
+        if(radius < 0) {
+            throw new IllegalArgumentException("radius cannot be negative");
+        }
+
+        this.radius = radius;
     }
 }

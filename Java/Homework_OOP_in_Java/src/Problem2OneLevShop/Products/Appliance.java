@@ -1,9 +1,19 @@
 package Problem2OneLevShop.Products;
 
-import Problem2OneLevShop.AgeRestriction;
+import java.math.BigDecimal;
 
-public class Appliance extends ElectonicsProduct{
-    public Appliance(String name, double price, int quantity, AgeRestriction restriction) {
-        super(name, price, quantity, restriction);
-    }
+public class Appliance extends ElectronicsProduct {
+	public Appliance(String name, double price, int quantity,
+			AgeRestriction ageRestrictionLevel) {
+		super(name, price, quantity, ageRestrictionLevel, 6);
+	}
+
+	@Override
+	public BigDecimal getPrice() {
+		if (this.quantity < 50) {
+			return this.price.multiply(new BigDecimal(1.05));
+		}
+		
+		return this.price;
+	}
 }

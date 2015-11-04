@@ -1,61 +1,67 @@
 package Problem1Geometry.Shapes;
 
-import java.awt.*;
-import java.util.ArrayList;
-
 public class Triangle extends PlaneShape {
-    private int x1;
-    private int y1;
-    private int x2;
-    private int y2;
-    private int x3;
-    private int y3;
-    private double a;
-    private double b;
-    private double c;
+    public Triangle(double x1, double y1, double x2, double y2, double x3, double y3) {
+        super(x1, y1);
+        this.vertices[1] = new Vertex2D(x2, y2);
+        this.vertices[2] = new Vertex2D(x3, y3);
 
-    public Triangle(int x1, int y1, int x2, int y2, int x3, int y3) {
-        super();
-        this.x1 = x1;
-        this.y1 = y1;
-        this.x2 = x2;
-        this.y2 = y2;
-        this.x3 = x3;
-        this.y3 = y3;
-        initVertices();
-        calculateSideLength();
-    }
-
-    private ArrayList<Point> initVertices() {
-        verticles.add(new Point(x1, y1));
-        verticles.add(new Point(x2, y2));
-        verticles.add(new Point(x3, y3));
-        return verticles;
-    }
-
-    private void calculateSideLength() {
-        this.c = Math.sqrt(Math.pow((x1 - x2), 2) + Math.pow((y1 - y2), 2));
-        this.a = Math.sqrt(Math.pow((x2 - x3), 2) + Math.pow((y2 - y3), 2));
-        this.b = Math.sqrt(Math.pow((x3 - x1), 2) + Math.pow((y3 - y1), 2));
+        this.isValidTriangle();
     }
 
     @Override
     public double getArea() {
-        double p = getPerimeter()/2;
-        double area = Math.sqrt(p*(p-a)*(p-b)*(p-c));
+        double s = this.getPerimeter();
+        double a = this.getDistanceAB();
+        double b = this.getDistanceBC();
+        double c = this.getDistanceAC();
+
+        double area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
+
         return area;
     }
 
     @Override
     public double getPerimeter() {
-        return this.a + this.b + this.c;
+        double perimeter = this.getDistanceAB() + this.getDistanceBC() + this.getDistanceAC();
+
+        return perimeter;
     }
 
     @Override
     public String toString() {
-        return "Triangle" + "\n"+
-                "Vertices " + verticles.toString() + "\n"+
-                "Perimeter: " + getPerimeter() +"\n"+
-                "Area: " + getArea() ;
+        return super.toString() +
+                this.vertices[1].toString() +
+                this.vertices[2].toString();
+    }
+
+    private void isValidTriangle() {
+        boolean sideABtoC = (this.getDistanceAB() + this.getDistanceBC()) > this.getDistanceAC();
+        boolean sideBCtoA = (this.getDistanceBC() + this.getDistanceAC()) > this.getDistanceAB();
+        boolean sideACtoB = (this.getDistanceAC() + this.getDistanceAB()) > this.getDistanceBC();
+
+        boolean isTriangle = sideABtoC && sideBCtoA && sideACtoB;
+
+        if (!isTriangle) {
+            throw new IllegalArgumentException("Cannot create a valid triangle with this data");
+        }
+    }
+
+    public double getDistanceAB() {
+        double distanceAB = Vertex.getDistanceBetweenPoints(this.vertices[0], this.vertices[1]);
+
+        return distanceAB;
+    }
+
+    public double getDistanceBC() {
+        double distanceBC = Vertex.getDistanceBetweenPoints(this.vertices[1], this.vertices[2]);
+
+        return distanceBC;
+    }
+
+    public double getDistanceAC() {
+        double distanceAC = Vertex.getDistanceBetweenPoints(this.vertices[2], this.vertices[0]);
+
+        return distanceAC;
     }
 }
