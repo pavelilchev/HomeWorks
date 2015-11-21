@@ -1,0 +1,37 @@
+ition, nothing else happens; print on the console "Made a move!"
+When the game ends (either the player has lost or all moves were made), print "Total moves made: X".
+Input
+•	The input data should be read from the console.
+•	On the first line of input you will receive the number N – number of rows of the labyrinth.
+•	On the next N lines you will receive the layout of the labyrinth.
+•	On the last line you will receive the moves you need to make as a string.
+•	The input data will always be valid and in the format described. There is no need to check it explicitly.
+Output
+•	The output should be printed on the console.
+•	For each outcome print the required output as described above.
+Constraints
+•	The number N will be an integer in the range [1 … 15].
+•	The labyrinth will contain only the symbols – "_", "|", "@", "#", "*", "$", " " (single space), ".".
+•	The string containing the moves will be comprised of the following symbols only – "v", "^", "<", and ">".
+•	Allowed working time for your program: 0.5 seconds. Allowed memory: 16 MB.
+Examples
+Input	Output	Comments
+5
+.|
+..|
+*.$  .
+###...
+______
+>v>>vv>>>^^^<<	Bumped a wall.
+Made a move!
+Made a move!
+Bumped a wall.
+Made a move!
+Ouch! That hurt! Lives left: 2
+Ouch! That hurt! Lives left: 1
+Made a move!
+Made a move!
+Fell off a cliff! Game Over!
+Total moves made: 8	Player starts at (0, 0). First move is ">" (right), which takes the player into a wall. Next, he moves down and right. The next move is right again and he hits another wall. He then moves down twice, on the second move he lands on an obstacle ("#") and loses a life point. He then moves right and loses another life. Two moves to the right are followed by a move upwards which takes him out of the labyrinth (empty cell), so the game is over. The total number of moves where the player actually changed position is 7.
+
+
