@@ -1,0 +1,9 @@
+C:\Pavel\CSharp\HomeworkDefiningClasses\LaptopShop\obj\Debug\ResolveAssemblyReference.cache
+C:\Pavel\CSharp\HomeworkDefiningClasses\LaptopShop\bin\Debug\LaptopShop.exe
+C:\Pavel\CSharp\HomeworkDefiningClasses\LaptopShop\bin\Debug\LaptopShop.pdb
+C:\Pavel\CSharp\HomeworkDefiningClasses\LaptopShop\obj\Debug\LaptopShop.exe
+C:\Pavel\CSharp\HomeworkDefiningClasses\LaptopShop\obj\Debug\LaptopShop.pdb
+C:\Users\pavel\Downloads\HomeworkDefiningClasses\LaptopShop\obj\Debug\LaptopShop.exe
+C:\Users\pavel\Downloads\HomeworkDefiningClasses\LaptopShop\obj\Debug\LaptopShop.pdb
+C:\Users\pavel\Downloads\HomeworkDefiningClasses\LaptopShop\bin\Debug\LaptopShop.exe
+C:\Users\pavel\Downloads\HomeworkDefiningClasses\LaptopShop\bin\Debug\LaptopShop.pdb

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BitArray
 {
@@ -10,6 +6,9 @@ namespace BitArray
     {
         static void Main(string[] args)
         {
+            BitArray bits = new BitArray(1000);
+            bits[999] = 1;
+            Console.WriteLine(bits);
         }
     }
 }

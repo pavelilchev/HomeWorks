@@ -1,0 +1,10 @@
+C:\Pavel\CSharp\HomeworkDefiningClasses\PCCatalog\obj\Debug\ResolveAssemblyReference.cache
+C:\Pavel\CSharp\HomeworkDefiningClasses\PCCatalog\bin\Debug\PCCatalog.exe
+C:\Pavel\CSharp\HomeworkDefiningClasses\PCCatalog\bin\Debug\PCCatalog.pdb
+C:\Pavel\CSharp\HomeworkDefiningClasses\PCCatalog\obj\Debug\PCCatalog.exe
+C:\Pavel\CSharp\HomeworkDefiningClasses\PCCatalog\obj\Debug\PCCatalog.pdb
+C:\Users\pavel\Downloads\HomeworkDefiningClasses\PCCatalog\obj\Debug\PCCatalog.exe
+C:\Users\pavel\Downloads\HomeworkDefiningClasses\PCCatalog\obj\Debug\PCCatalog.pdb
+C:\Users\pavel\Downloads\HomeworkDefiningClasses\PCCatalog\bin\Debug\PCCatalog.exe
+C:\Users\pavel\Downloads\HomeworkDefiningClasses\PCCatalog\bin\Debug\PCCatalog.pdb
+C:\Users\pavel\Downloads\HomeworkDefiningClasses\PCCatalog\obj\Debug\PCCatalog.csprojResolveAssemblyReference.cache

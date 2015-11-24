@@ -1,0 +1,6 @@
+D:\Programirane\Visual\HomeworkStaticMembersAndNamespaces\1.Point3D\bin\Debug\1.Point3D.exe.config
+D:\Programirane\Visual\HomeworkStaticMembersAndNamespaces\1.Point3D\bin\Debug\1.Point3D.exe
+D:\Programirane\Visual\HomeworkStaticMembersAndNamespaces\1.Point3D\bin\Debug\1.Point3D.pdb
+D:\Programirane\Visual\HomeworkStaticMembersAndNamespaces\1.Point3D\obj\Debug\1.Point3D.csprojResolveAssemblyReference.cache
+D:\Programirane\Visual\HomeworkStaticMembersAndNamespaces\1.Point3D\obj\Debug\1.Point3D.exe
+D:\Programirane\Visual\HomeworkStaticMembersAndNamespaces\1.Point3D\obj\Debug\1.Point3D.pdb

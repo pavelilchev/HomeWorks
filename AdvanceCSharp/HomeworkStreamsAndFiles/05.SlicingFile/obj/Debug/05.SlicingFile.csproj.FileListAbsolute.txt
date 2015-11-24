@@ -1,0 +1,8 @@
+D:\Pavel\HomeworkStreamsAndFiles\05.SlicingFile\bin\Debug\05.SlicingFile.exe.config
+D:\Pavel\HomeworkStreamsAndFiles\05.SlicingFile\bin\Debug\05.SlicingFile.exe
+D:\Pavel\HomeworkStreamsAndFiles\05.SlicingFile\bin\Debug\05.SlicingFile.pdb
+D:\Pavel\HomeworkStreamsAndFiles\05.SlicingFile\obj\Debug\05.SlicingFile.exe
+D:\Pavel\HomeworkStreamsAndFiles\05.SlicingFile\obj\Debug\05.SlicingFile.pdb
+D:\Programirane\HomeWorks\AdvanceCSharp\HomeworkStreamsAndFiles\05.SlicingFile\bin\Debug\05.SlicingFile.exe.config
+D:\Programirane\HomeWorks\AdvanceCSharp\HomeworkStreamsAndFiles\05.SlicingFile\obj\Debug\05.SlicingFile.exe
+D:\Programirane\HomeWorks\AdvanceCSharp\HomeworkStreamsAndFiles\05.SlicingFile\obj\Debug\05.SlicingFile.pdb

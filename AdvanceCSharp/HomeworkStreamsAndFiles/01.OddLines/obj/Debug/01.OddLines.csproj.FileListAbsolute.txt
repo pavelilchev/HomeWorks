@@ -1,0 +1,9 @@
+D:\Pavel\HomeworkStreamsAndFiles\01.OddLines\bin\Debug\01.OddLines.exe.config
+D:\Pavel\HomeworkStreamsAndFiles\01.OddLines\bin\Debug\01.OddLines.exe
+D:\Pavel\HomeworkStreamsAndFiles\01.OddLines\bin\Debug\01.OddLines.pdb
+D:\Pavel\HomeworkStreamsAndFiles\01.OddLines\obj\Debug\01.OddLines.csprojResolveAssemblyReference.cache
+D:\Pavel\HomeworkStreamsAndFiles\01.OddLines\obj\Debug\01.OddLines.exe
+D:\Pavel\HomeworkStreamsAndFiles\01.OddLines\obj\Debug\01.OddLines.pdb
+D:\Programirane\HomeWorks\AdvanceCSharp\HomeworkStreamsAndFiles\01.OddLines\bin\Debug\01.OddLines.exe.config
+D:\Programirane\HomeWorks\AdvanceCSharp\HomeworkStreamsAndFiles\01.OddLines\obj\Debug\01.OddLines.exe
+D:\Programirane\HomeWorks\AdvanceCSharp\HomeworkStreamsAndFiles\01.OddLines\obj\Debug\01.OddLines.pdb

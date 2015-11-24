@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ElementBuilder.cs" />
+    <Compile Include="HTMLDispatcher.cs" />
     <Compile Include="TestHTML.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

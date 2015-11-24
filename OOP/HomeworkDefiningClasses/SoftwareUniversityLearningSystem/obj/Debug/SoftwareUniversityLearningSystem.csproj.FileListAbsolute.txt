@@ -1,0 +1,6 @@
+C:\Users\pavel\Downloads\HomeworkDefiningClasses\SoftwareUniversityLearningSystem\bin\Debug\SoftwareUniversityLearningSystem.exe.config
+C:\Users\pavel\Downloads\HomeworkDefiningClasses\SoftwareUniversityLearningSystem\bin\Debug\SoftwareUniversityLearningSystem.exe
+C:\Users\pavel\Downloads\HomeworkDefiningClasses\SoftwareUniversityLearningSystem\bin\Debug\SoftwareUniversityLearningSystem.pdb
+C:\Users\pavel\Downloads\HomeworkDefiningClasses\SoftwareUniversityLearningSystem\obj\Debug\SoftwareUniversityLearningSystem.csprojResolveAssemblyReference.cache
+C:\Users\pavel\Downloads\HomeworkDefiningClasses\SoftwareUniversityLearningSystem\obj\Debug\SoftwareUniversityLearningSystem.exe
+C:\Users\pavel\Downloads\HomeworkDefiningClasses\SoftwareUniversityLearningSystem\obj\Debug\SoftwareUniversityLearningSystem.pdb

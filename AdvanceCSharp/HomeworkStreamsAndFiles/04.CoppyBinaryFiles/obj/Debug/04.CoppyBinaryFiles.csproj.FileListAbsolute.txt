@@ -1,0 +1,9 @@
+D:\Pavel\HomeworkStreamsAndFiles\04.CoppyBinaryFiles\bin\Debug\04.CoppyBinaryFiles.exe.config
+D:\Pavel\HomeworkStreamsAndFiles\04.CoppyBinaryFiles\bin\Debug\04.CoppyBinaryFiles.exe
+D:\Pavel\HomeworkStreamsAndFiles\04.CoppyBinaryFiles\bin\Debug\04.CoppyBinaryFiles.pdb
+D:\Pavel\HomeworkStreamsAndFiles\04.CoppyBinaryFiles\obj\Debug\04.CoppyBinaryFiles.csprojResolveAssemblyReference.cache
+D:\Pavel\HomeworkStreamsAndFiles\04.CoppyBinaryFiles\obj\Debug\04.CoppyBinaryFiles.exe
+D:\Pavel\HomeworkStreamsAndFiles\04.CoppyBinaryFiles\obj\Debug\04.CoppyBinaryFiles.pdb
+D:\Programirane\HomeWorks\AdvanceCSharp\HomeworkStreamsAndFiles\04.CoppyBinaryFiles\bin\Debug\04.CoppyBinaryFiles.exe.config
+D:\Programirane\HomeWorks\AdvanceCSharp\HomeworkStreamsAndFiles\04.CoppyBinaryFiles\obj\Debug\04.CoppyBinaryFiles.exe
+D:\Programirane\HomeWorks\AdvanceCSharp\HomeworkStreamsAndFiles\04.CoppyBinaryFiles\obj\Debug\04.CoppyBinaryFiles.pdb

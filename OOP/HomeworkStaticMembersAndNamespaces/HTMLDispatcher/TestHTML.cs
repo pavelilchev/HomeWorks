@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HTMLDispatcher
 {
@@ -10,6 +6,13 @@ namespace HTMLDispatcher
     {
         static void Main(string[] args)
         {
+            ElementBuilder element = new ElementBuilder("div");
+            element.AddAttribute("id", "page");
+            element.AddAttribute("class", "big");
+            element.AddContent("<p>Hello</p>");
+            Console.WriteLine(element);            
+            Console.WriteLine(element * 2);
+         
         }
     }
 }

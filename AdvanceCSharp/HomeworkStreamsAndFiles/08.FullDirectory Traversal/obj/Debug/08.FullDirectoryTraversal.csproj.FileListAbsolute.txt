@@ -1,0 +1,6 @@
+D:\Pavel\HomeworkStreamsAndFiles\08.FullDirectory Traversal\bin\Debug\08.FullDirectory Traversal.exe.config
+D:\Pavel\HomeworkStreamsAndFiles\08.FullDirectory Traversal\bin\Debug\08.FullDirectory Traversal.exe
+D:\Pavel\HomeworkStreamsAndFiles\08.FullDirectory Traversal\bin\Debug\08.FullDirectory Traversal.pdb
+D:\Pavel\HomeworkStreamsAndFiles\08.FullDirectory Traversal\obj\Debug\08.FullDirectoryTraversal.csprojResolveAssemblyReference.cache
+D:\Pavel\HomeworkStreamsAndFiles\08.FullDirectory Traversal\obj\Debug\08.FullDirectory Traversal.exe
+D:\Pavel\HomeworkStreamsAndFiles\08.FullDirectory Traversal\obj\Debug\08.FullDirectory Traversal.pdb

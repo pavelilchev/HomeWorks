@@ -1,0 +1,7 @@
+C:\Pavel\CSharp\HomeworkInheritanceAndAbstraction\Problem1.HumanStudentWorker\obj\Debug\ResolveAssemblyReference.cache
+C:\Pavel\CSharp\HomeworkInheritanceAndAbstraction\Problem1.HumanStudentWorker\bin\Debug\Problem1.HumanStudentWorker.exe
+C:\Pavel\CSharp\HomeworkInheritanceAndAbstraction\Problem1.HumanStudentWorker\bin\Debug\Problem1.HumanStudentWorker.pdb
+C:\Pavel\CSharp\HomeworkInheritanceAndAbstraction\Problem1.HumanStudentWorker\obj\Debug\Problem1.HumanStudentWorker.exe
+C:\Pavel\CSharp\HomeworkInheritanceAndAbstraction\Problem1.HumanStudentWorker\obj\Debug\Problem1.HumanStudentWorker.pdb
+D:\Programirane\HomeWorks\OOP\HomeworkInheritanceAndAbstraction\Problem1.HumanStudentWorker\obj\Debug\Problem1.HumanStudentWorker.exe
+D:\Programirane\HomeWorks\OOP\HomeworkInheritanceAndAbstraction\Problem1.HumanStudentWorker\obj\Debug\Problem1.HumanStudentWorker.pdb

@@ -1,0 +1,6 @@
+D:\Programirane\HomeWorks\OOP\HomeworkStaticMembersAndNamespaces\BitArray\bin\Debug\BitArray.exe.config
+D:\Programirane\HomeWorks\OOP\HomeworkStaticMembersAndNamespaces\BitArray\bin\Debug\BitArray.exe
+D:\Programirane\HomeWorks\OOP\HomeworkStaticMembersAndNamespaces\BitArray\bin\Debug\BitArray.pdb
+D:\Programirane\HomeWorks\OOP\HomeworkStaticMembersAndNamespaces\BitArray\obj\Debug\BitArray.csprojResolveAssemblyReference.cache
+D:\Programirane\HomeWorks\OOP\HomeworkStaticMembersAndNamespaces\BitArray\obj\Debug\BitArray.exe
+D:\Programirane\HomeWorks\OOP\HomeworkStaticMembersAndNamespaces\BitArray\obj\Debug\BitArray.pdb

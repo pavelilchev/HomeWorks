@@ -1,0 +1,9 @@
+C:\Pavel\CSharp\HomeworkDefiningClasses\Persons\obj\Debug\ResolveAssemblyReference.cache
+C:\Pavel\CSharp\HomeworkDefiningClasses\Persons\bin\Debug\Persons.exe
+C:\Pavel\CSharp\HomeworkDefiningClasses\Persons\bin\Debug\Persons.pdb
+C:\Pavel\CSharp\HomeworkDefiningClasses\Persons\obj\Debug\Persons.exe
+C:\Pavel\CSharp\HomeworkDefiningClasses\Persons\obj\Debug\Persons.pdb
+C:\Users\pavel\Downloads\HomeworkDefiningClasses\Persons\obj\Debug\Persons.exe
+C:\Users\pavel\Downloads\HomeworkDefiningClasses\Persons\obj\Debug\Persons.pdb
+C:\Users\pavel\Downloads\HomeworkDefiningClasses\Persons\bin\Debug\Persons.exe
+C:\Users\pavel\Downloads\HomeworkDefiningClasses\Persons\bin\Debug\Persons.pdb

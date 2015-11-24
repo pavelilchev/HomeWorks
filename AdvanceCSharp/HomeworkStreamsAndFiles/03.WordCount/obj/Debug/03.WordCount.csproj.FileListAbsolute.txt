@@ -1,0 +1,6 @@
+D:\Pavel\HomeworkStreamsAndFiles\03.WordCount\bin\Debug\03.WordCount.exe.config
+D:\Pavel\HomeworkStreamsAndFiles\03.WordCount\bin\Debug\03.WordCount.exe
+D:\Pavel\HomeworkStreamsAndFiles\03.WordCount\bin\Debug\03.WordCount.pdb
+D:\Pavel\HomeworkStreamsAndFiles\03.WordCount\obj\Debug\03.WordCount.csprojResolveAssemblyReference.cache
+D:\Pavel\HomeworkStreamsAndFiles\03.WordCount\obj\Debug\03.WordCount.exe
+D:\Pavel\HomeworkStreamsAndFiles\03.WordCount\obj\Debug\03.WordCount.pdb

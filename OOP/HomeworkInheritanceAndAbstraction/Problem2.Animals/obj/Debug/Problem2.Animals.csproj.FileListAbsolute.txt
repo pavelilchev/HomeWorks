@@ -1,0 +1,7 @@
+C:\Pavel\CSharp\HomeworkInheritanceAndAbstraction\Problem2.Animals\bin\Debug\Problem2.Animals.exe
+C:\Pavel\CSharp\HomeworkInheritanceAndAbstraction\Problem2.Animals\bin\Debug\Problem2.Animals.pdb
+C:\Pavel\CSharp\HomeworkInheritanceAndAbstraction\Problem2.Animals\obj\Debug\ResolveAssemblyReference.cache
+C:\Pavel\CSharp\HomeworkInheritanceAndAbstraction\Problem2.Animals\obj\Debug\Problem2.Animals.exe
+C:\Pavel\CSharp\HomeworkInheritanceAndAbstraction\Problem2.Animals\obj\Debug\Problem2.Animals.pdb
+D:\Programirane\HomeWorks\OOP\HomeworkInheritanceAndAbstraction\Problem2.Animals\obj\Debug\Problem2.Animals.exe
+D:\Programirane\HomeWorks\OOP\HomeworkInheritanceAndAbstraction\Problem2.Animals\obj\Debug\Problem2.Animals.pdb

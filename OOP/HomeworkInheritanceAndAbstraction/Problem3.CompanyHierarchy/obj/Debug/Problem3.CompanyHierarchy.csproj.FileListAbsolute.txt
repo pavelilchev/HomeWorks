@@ -1,0 +1,10 @@
+C:\Pavel\CSharp\HomeworkInheritanceAndAbstraction\Problem3.CompanyHierarchy\obj\Debug\ResolveAssemblyReference.cache
+C:\Pavel\CSharp\HomeworkInheritanceAndAbstraction\Problem3.CompanyHierarchy\bin\Debug\Problem3.CompanyHierarchy.exe
+C:\Pavel\CSharp\HomeworkInheritanceAndAbstraction\Problem3.CompanyHierarchy\bin\Debug\Problem3.CompanyHierarchy.pdb
+C:\Pavel\CSharp\HomeworkInheritanceAndAbstraction\Problem3.CompanyHierarchy\obj\Debug\Problem3.CompanyHierarchy.exe
+C:\Pavel\CSharp\HomeworkInheritanceAndAbstraction\Problem3.CompanyHierarchy\obj\Debug\Problem3.CompanyHierarchy.pdb
+D:\Programirane\HomeWorks\OOP\HomeworkInheritanceAndAbstraction\Problem3.CompanyHierarchy\obj\Debug\Problem3.CompanyHierarchy.exe
+D:\Programirane\HomeWorks\OOP\HomeworkInheritanceAndAbstraction\Problem3.CompanyHierarchy\obj\Debug\Problem3.CompanyHierarchy.pdb
+D:\Programirane\HomeWorks\OOP\HomeworkInheritanceAndAbstraction\Problem3.CompanyHierarchy\bin\Debug\Problem3.CompanyHierarchy.exe
+D:\Programirane\HomeWorks\OOP\HomeworkInheritanceAndAbstraction\Problem3.CompanyHierarchy\bin\Debug\Problem3.CompanyHierarchy.pdb
+D:\Programirane\HomeWorks\OOP\HomeworkInheritanceAndAbstraction\Problem3.CompanyHierarchy\obj\Debug\Problem3.CompanyHierarchy.csprojResolveAssemblyReference.cache

@@ -1,0 +1,5 @@
+D:\Pavel\HomeworkStreamsAndFiles\07.DirectoryTraversal\bin\Debug\07.DirectoryTraversal.exe.config
+D:\Pavel\HomeworkStreamsAndFiles\07.DirectoryTraversal\bin\Debug\07.DirectoryTraversal.exe
+D:\Pavel\HomeworkStreamsAndFiles\07.DirectoryTraversal\bin\Debug\07.DirectoryTraversal.pdb
+D:\Pavel\HomeworkStreamsAndFiles\07.DirectoryTraversal\obj\Debug\07.DirectoryTraversal.exe
+D:\Pavel\HomeworkStreamsAndFiles\07.DirectoryTraversal\obj\Debug\07.DirectoryTraversal.pdb

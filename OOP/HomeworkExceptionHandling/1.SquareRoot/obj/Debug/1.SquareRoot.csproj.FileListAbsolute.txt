@@ -1,0 +1,5 @@
+D:\Programirane\HomeWorks\OOP\HomeworkExceptionHandling\1.SquareRoot\bin\Debug\1.SquareRoot.exe.config
+D:\Programirane\HomeWorks\OOP\HomeworkExceptionHandling\1.SquareRoot\bin\Debug\1.SquareRoot.exe
+D:\Programirane\HomeWorks\OOP\HomeworkExceptionHandling\1.SquareRoot\bin\Debug\1.SquareRoot.pdb
+D:\Programirane\HomeWorks\OOP\HomeworkExceptionHandling\1.SquareRoot\obj\Debug\1.SquareRoot.exe
+D:\Programirane\HomeWorks\OOP\HomeworkExceptionHandling\1.SquareRoot\obj\Debug\1.SquareRoot.pdb

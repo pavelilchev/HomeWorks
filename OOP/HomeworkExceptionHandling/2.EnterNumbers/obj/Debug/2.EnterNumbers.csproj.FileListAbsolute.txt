@@ -1,0 +1,5 @@
+D:\Programirane\HomeWorks\OOP\HomeworkExceptionHandling\2.EnterNumbers\bin\Debug\2.EnterNumbers.exe.config
+D:\Programirane\HomeWorks\OOP\HomeworkExceptionHandling\2.EnterNumbers\bin\Debug\2.EnterNumbers.exe
+D:\Programirane\HomeWorks\OOP\HomeworkExceptionHandling\2.EnterNumbers\bin\Debug\2.EnterNumbers.pdb
+D:\Programirane\HomeWorks\OOP\HomeworkExceptionHandling\2.EnterNumbers\obj\Debug\2.EnterNumbers.exe
+D:\Programirane\HomeWorks\OOP\HomeworkExceptionHandling\2.EnterNumbers\obj\Debug\2.EnterNumbers.pdb
