@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.3
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem1.Shapes", "Problem1.Shapes\Problem1.Shapes.csproj", "{6480825E-ED37-4787-AEE0-CF27EBC70DAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem2.BankOfKurtovoKonare", "Problem2.BankOfKurtovoKonare\Problem2.BankOfKurtovoKonare.csproj", "{1E2109CA-F5D4-4A6F-A637-4BBCF93D73CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6480825E-ED37-4787-AEE0-CF27EBC70DAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6480825E-ED37-4787-AEE0-CF27EBC70DAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6480825E-ED37-4787-AEE0-CF27EBC70DAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6480825E-ED37-4787-AEE0-CF27EBC70DAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E2109CA-F5D4-4A6F-A637-4BBCF93D73CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E2109CA-F5D4-4A6F-A637-4BBCF93D73CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E2109CA-F5D4-4A6F-A637-4BBCF93D73CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E2109CA-F5D4-4A6F-A637-4BBCF93D73CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+EndGlobal

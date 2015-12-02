@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ClassDiagram Zoom="1" MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="TheSlum.Bonus" Collapsed="True">
+    <Position X="8.5" Y="4.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="TheSlum.Character" Collapsed="True">
+    <Position X="6.25" Y="2.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="TheSlum.GameObject" Collapsed="True">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="TheSlum.Item" Collapsed="True">
+    <Position X="8.5" Y="2.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="TheSlum.Program" Collapsed="True">
+    <Position X="3" Y="1.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="TheSlum.GameEngine.Engine" Collapsed="True">
+    <Position X="3" Y="2" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Interface Name="TheSlum.Interfaces.IHeal" Collapsed="True">
+    <Position X="1.25" Y="1.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Interface>
+  <Interface Name="TheSlum.Interfaces.ITimeoutable" Collapsed="True">
+    <Position X="1.25" Y="2.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Interface>
+  <Interface Name="TheSlum.Interfaces.IAttack" Collapsed="True">
+    <Position X="1.2" Y="2" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Interface>
+  <Enum Name="TheSlum.Team" Collapsed="True">
+    <Position X="3" Y="2.75" Width="1.5" />
+    <Compartments />
+  </Enum>
+</ClassDiagram>
