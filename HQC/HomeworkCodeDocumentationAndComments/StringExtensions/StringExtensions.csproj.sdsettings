@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Properties>
+  <Properties key="CSharpFormatting">
+    <SerializedObject key="StatementBraceStyle">
+      <BraceStyle xmlns="clr-namespace:ICSharpCode.NRefactory.CSharp;assembly=ICSharpCode.NRefactory.CSharp">EndOfLineWithoutSpace</BraceStyle>
+    </SerializedObject>
+    <SerializedObject key="MethodBraceStyle">
+      <BraceStyle xmlns="clr-namespace:ICSharpCode.NRefactory.CSharp;assembly=ICSharpCode.NRefactory.CSharp">NextLine</BraceStyle>
+    </SerializedObject>
+  </Properties>
+</Properties>

@@ -1,0 +1,11 @@
+﻿namespace CohesionAndCoupling
+{
+    public interface IFigure3D
+    {
+        double Width { get; }
+
+        double Height { get; }
+
+        double Depth { get; }
+    }
+}
