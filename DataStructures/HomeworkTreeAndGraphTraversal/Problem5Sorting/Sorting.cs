@@ -3,7 +3,18 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
+    public class Sequence
+    {
+        public Sequence(int[] numbers, int steps)
+        {
+            this.Numbers = numbers;
+            this.Steps = steps;
+        }
 
+        public int[] Numbers { get; set; }
+
+        public int Steps { get; set; }
+    }
     public class Sorting
     {
         public static void Main()

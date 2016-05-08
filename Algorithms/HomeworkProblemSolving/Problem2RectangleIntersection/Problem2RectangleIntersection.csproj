@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BF84E5FF-435C-46A5-9ACD-B8674CF8CF30}</ProjectGuid>
+    <ProjectGuid>{2F4E308C-BB04-4EF2-A311-F6A5BC70F212}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Problem5Sorting</RootNamespace>
-    <AssemblyName>Problem5Sorting</AssemblyName>
+    <RootNamespace>Problem2RectangleIntersection</RootNamespace>
+    <AssemblyName>Problem2RectangleIntersection</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Sorting.cs" />
+    <Compile Include="RectangleIntersection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
