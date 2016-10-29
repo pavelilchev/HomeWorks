@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Highlighter</title>
+    <style>
+        #wrapper {
+            width: 800px;
+            overflow: hidden;
+        }
+
+        #header {
+            font-size: 300%;
+            font-weight: bold;
+        }
+
+        #menu {
+            background-color: darkgrey;
+            padding: 0.5em;
+        }
+
+        #menu a {
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+
+        #content {
+            width: 500px;
+            float: left;
+        }
+
+        .article {
+            padding: 2em
+        }
+
+        .article .title {
+            font-size: 150%
+        }
+
+        #sidebar {
+            width: 250px;
+            float: right;
+            background-color: lightgray;
+        }
+
+        #footer {
+            text-align: center;
+            clear: both;
+            height: 5em;
+            background-color: darkgrey;
+        }
+
+        .highlight {
+            border: 1px solid red;
+            background-color: pink;
+        }
+    </style>
+    <script src="jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<div id="wrapper"> \
+    <div id="header">LOGO</div>
+    \
+    <div id="menu"><a href="/">Menu item 1</a><a href="/">Menu item 2</a><a href="/">Menu item 3</a></div>
+    \
+    <div id="content" class="expected"> \
+        <div class="expected article"> \
+            <div class="title">Article title</div>
+            \
+            <div class="expected content"> \
+                <p class="expected">Lorem ipsum dolor sit amet <span class="expected">libero sodales</span>
+                    sollicitudin. </p> \
+                <p>Suspendisse tempus</p> \
+            </div>
+            \
+        </div>
+        \
+        <div class="article"> \
+            <div class="title">Article title</div>
+            \
+            <div class="content"><p>Aliquam luctus maximus lacus</p></div>
+            \
+        </div>
+        \
+    </div>
+    \
+    <div id="sidebar"> \
+        <ul> \
+            <li><a href="/">Navigation 1</a></li>
+            \
+            <li><a href="/">Navigation 2</a></li>
+            \
+            <li><a href="/">Navigation 3</a></li>
+            \
+        </ul>
+        \
+    </div>
+    \
+    <div id="footer">Copyright</div>
+    \
+</div>
+<script src="7.DOMTraversal.js"></script>
+<script>
+    domTraversal('#content');
+</script>
+</body>
+</html>
