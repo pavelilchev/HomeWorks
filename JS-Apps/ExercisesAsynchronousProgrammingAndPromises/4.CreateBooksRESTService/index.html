@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="books.js"></script>
+</head>
+<body>
+<div id="createBook" style="margin-bottom: 20px">
+    <div style="margin-bottom: 10px">
+        <label for="txtTitle" style="width: 80px; display: inline-block;">Заглавие: </label>
+        <input type="text" id="txtTitle">
+    </div>
+    <div style="margin-bottom: 10px">
+        <label for="txtAuthor" style="width: 80px; display: inline-block;">Автор: </label>
+        <input type="text"  id="txtAuthor">
+    </div>
+    <div style="margin-bottom: 10px">
+        <label for="txtISBN" style="width: 80px; display: inline-block;">ИСБН: </label>
+        <input type="text"  id="txtISBN">
+    </div >
+    <button id="btnCreate">Добави книга</button>
+</div>
+
+<h1>Книги</h1>
+<div id="books">
+</div>
+<script>$(attachEvents())</script>
+</body>
+</html>
