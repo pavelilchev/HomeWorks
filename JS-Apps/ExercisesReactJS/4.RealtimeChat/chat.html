@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+    <style>
+        #message {
+            width: 100%;
+            margin: 10px 0 10px 0;
+            display: block;
+            box-sizing: border-box;
+            font-size: 1.2rem;
+        }
+        .messageContainer{ border: 1px solid blue; margin: 5px;}
+        button{ margin: 0 5px; }
+        #root{ width: 1080px; }
+    </style>
+    <script src="https://unpkg.com/react/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom/dist/react-dom.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/reactfire/1.0.0/reactfire.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="root"></div>
+<script>
+    var config = {
+        apiKey: "AIzaSyAJOPfR0NEhYrOz5LQjlI2Phd6XU6G6FFY",
+        databaseURL: "https://messenger-f25a5.firebaseio.com/"
+    };
+
+    firebase.initializeApp(config);
+</script>
+<script type="text/babel" src="chat.jsx"></script>
+<script type="text/babel">
+    ReactDOM.render(<Chatbox message="Test message" author="Nameless Author" />, document.getElementById("root"));
+</script>
+</body>
+</html>
