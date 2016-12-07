@@ -140,3 +140,28 @@ function showData(data) {
     $('#app').empty();
     $('#app').append(ul);
 }
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+<button onclick="register()">Register</button>
+<button onclick="login()">Login</button>
+<button onclick="logout()">Logout</button>
+<button onclick="listAll()">List all</button>
+<button onclick="edit()">Edit</button>
+<button onclick="deleteEntry()">Delete</button>
+<div>
+    <input type="text" id="name"/>
+    <input type="text" id="country"/>
+    <button onclick="create()">Create</button>
+</div>
+<div id="app"></div>
+<script>$(listAll())</script>
+</body>
+</html>
