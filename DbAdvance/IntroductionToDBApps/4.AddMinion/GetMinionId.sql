@@ -1,0 +1,1 @@
+﻿select isnull(max(Id), 0) + 1 from Minions
