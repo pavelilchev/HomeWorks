@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<students>
+  <student>
+    <name>Ivan Ivanov</name>
+    <gender>Male</gender>
+    <birthDate>1992/12/23</birthDate>
+    <phoneNumber>0888888888</phoneNumber>
+    <email>ivan@gmail.com</email>
+    <university>Software University</university>
+    <speciality>C# Web Developer</speciality>
+    <facultyNumber>123456789</facultyNumber>
+    <exams>
+      <exam>
+        <name>Programing Basics</name>
+        <dateTaken>2017/01/01</dateTaken>
+        <grade>6.0</grade>
+      </exam>
+      <exam>
+        <name>C# Fundamentels</name>
+        <dateTaken>2017/02/01</dateTaken>
+        <grade>5.93</grade>
+      </exam>
+      <exam>
+        <name>OOP</name>
+        <dateTaken>2017/03/01</dateTaken>
+        <grade>4.33</grade>
+      </exam>
+    </exams>
+  </student>
+ <student>
+    <name>Dragan Petkov</name>
+    <gender>Male</gender>
+    <birthDate>1990/06/03</birthDate>
+    <phoneNumber>0666666666</phoneNumber>
+    <email>dragan@gmail.com</email>
+    <university>Software University</university>
+    <speciality>C# Web Developer</speciality>
+    <facultyNumber>123456790</facultyNumber>
+    <exams>
+      <exam>
+        <name>Programing Basics</name>
+        <dateTaken>2017/01/01</dateTaken>
+        <grade>5.0</grade>
+      </exam>
+      <exam>
+        <name>C# Fundamentels</name>
+        <dateTaken>2017/02/01</dateTaken>
+        <grade>6</grade>
+      </exam>
+      <exam>
+        <name>OOP</name>
+        <dateTaken>2017/03/01</dateTaken>
+        <grade>6</grade>
+      </exam>
+    </exams>
+  </student>
+</students>

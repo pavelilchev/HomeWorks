@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<albums>
+  <album>
+    <name>The King of Limbs</name>
+    <artist>Radiohead</artist>
+    <year>1985</year>
+    <producer>Some producer</producer>
+    <price>20.25</price>
+    <songs>
+      <song>
+        <title>Bloom</title>
+        <duration>5:15</duration>
+      </song>
+      <song>
+        <title>Morning Mr Magpie</title>
+        <duration>4:41</duration>
+      </song>
+      <song>
+        <title>Little by Little</title>
+        <duration>4:27</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Dummy</name>
+    <artist>Portishead</artist>
+    <year>1995</year>
+    <producer>Other producer</producer>
+    <price>21.25</price>
+    <songs>
+      <song>
+        <title>Mysterons</title>
+        <duration>5:02</duration>
+      </song>
+      <song>
+        <title>Strangers</title>
+        <duration>4:41</duration>
+      </song>
+      <song>
+        <title>Pedestal</title>
+        <duration>3:39</duration>
+      </song>
+    </songs>
+  </album>
+</albums>
