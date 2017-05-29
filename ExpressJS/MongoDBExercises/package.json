@@ -1,0 +1,19 @@
+{
+  "name": "mongo-db",
+  "version": "1.0.0",
+  "description": "MongoDB exercise",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "mongodb"
+  },
+  "keywords": [
+    "mongodb"
+  ],
+  "author": "PI",
+  "license": "MIT",
+  "dependencies": {
+    "mongodb": "^2.2.27",
+    "mongoose": "^4.10.3"
+  }
+}
