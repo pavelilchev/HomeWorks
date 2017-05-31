@@ -88,7 +88,10 @@ let findByTag = (searched) => {
 let filter = (data) => {
   let after = data.after
   let before = data.before
-  let limit = data.results || 10
+  let limit = data.results
+  if(!limit || limit > 10){
+    limit = 10
+  }
 
   return new Promise((resolve, reject) => {
     Image
