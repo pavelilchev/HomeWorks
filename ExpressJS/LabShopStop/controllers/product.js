@@ -12,6 +12,7 @@ module.exports.addGet = (req, res) => {
 module.exports.addPost = (req, res) => {
   let productObj = req.body
   productObj.image = '\\' + req.file.path
+  productObj.creator = req.user._id
 
   Product.create(productObj).then((product) => {
     Category.findById(product.category).then((category) => {
@@ -30,12 +31,16 @@ module.exports.editGet = (req, res) => {
       return
     }
 
-    Category.find().then((categories) => {
-      res.render('product/edit', {
-        product: product,
-        categories: categories
+    if (product.creator.equals(req.user._id) || req.user.roles.indexOf('Admin') >= 0) {
+      Category.find().then((categories) => {
+        res.render('product/edit', {
+          product: product,
+          categories: categories
+        })
       })
-    })
+    }else {
+      res.redirect('/')
+    }
   })
 }
 
@@ -49,6 +54,11 @@ module.exports.editPost = (req, res) => {
       return
     }
 
+    if (!product.creator.equals(req.user._id) &&
+      req.user.roles.indexOf('Admin') < 0) {
+      res.redirect('/')
+      return
+    }
     product.name = editedProduct.name
     product.description = editedProduct.description
     product.price = editedProduct.price
@@ -93,6 +103,12 @@ module.exports.deleteGet = (req, res) => {
       res.sendStatus(404)
       return
     }
+    
+    if (!product.creator.equals(req.user._id) &&
+      req.user.roles.indexOf('Admin') < 0) {
+      res.redirect('/')
+      return
+    }
 
     res.render('product/delete', {product: product})
   })
@@ -102,6 +118,13 @@ module.exports.deletePost = (req, res) => {
   let id = req.params.id
 
   Product.findById(id).then((product) => {
+    
+    if (!product.creator.equals(req.user._id) &&
+      req.user.roles.indexOf('Admin') < 0) {
+      res.redirect('/')
+      return
+    }
+
     Category.findById(product.category).then((category) => {
       let index = category.products.indexOf(product._id)
       category.products.splice(index, 1)
@@ -126,5 +149,25 @@ module.exports.buyGet = (req, res) => {
     }
 
     res.render('product/buy', {product: product})
+  })
+}
+
+module.exports.buyPost = (req, res) => {
+  let productId = req.params.id
+
+  Product.findById(productId).then(product => {
+    if (product.buyer) {
+      let error = `error=${encodedURIComponent('Product was already bought!')}`
+      res.redirect(`/?${error}`)
+      return
+    }
+
+    product.buyer = req.user._id
+    product.save().then(() => {
+      req.user.boughtProducts.push(productId)
+      req.user.save().then(() => {
+        res.redirect('/')
+      })
+    })
   })
 }

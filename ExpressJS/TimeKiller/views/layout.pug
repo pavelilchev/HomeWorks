@@ -1,0 +1,55 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    link(rel='icon' href='/images/favicon.ico' type='image/x-icon')
+    link(rel='stylesheet', type='text/css', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='/css/site.css')
+    script(src='https://code.jquery.com/jquery-3.2.1.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    script(src='/scripts/script.js')
+    title Time Killer
+  body
+    header
+      nav.navbar.navbar-default
+        .container
+          .navbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#menu-links', aria-expanded='false')
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href='/') Time Killer
+          #menu-links.collapse.navbar-collapse
+            ul.nav.navbar-nav
+              li.active
+                a(href='/') Home
+              li
+                a(href='/meme/all') Memes
+              if user
+                li
+                  a(href='/meme/add') Add Meme    
+            ul.nav.navbar-nav.navbar-right
+              if user
+                li
+                  span.home-greeting= `Hi, ${user.username}`
+                li
+                  a(href="/user/logout") Logout
+              else
+                li
+                  a(href='/user/login') Login
+                li
+                  a(href='/user/register') Register    
+      
+    main.container
+      if error
+        .error-msg.msg= error
+      else if success
+        #success-msg.success-msg.msg= success
+      block content
+
+    footer.footer
+      .container
+        p.text-muted Powered by &copy;Paco - 2017

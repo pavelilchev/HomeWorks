@@ -1,0 +1,13 @@
+extends ../layout.pug
+
+block content
+  h1.head-title Welcome to Time Killer!
+  h3 Register and yur own Meme
+  each m in memes
+    .single-meme.col-sm-4
+      h3= m.title
+      each t in m.tags
+        a.meme-tags(href=`/meme/hashtag/${t._id}`)= `#${t.name} `
+      img(src=`${m.image}`, alt=`${m.title}`)
+
+  

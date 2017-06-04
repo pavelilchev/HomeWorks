@@ -1,0 +1,38 @@
+extends ../layout.pug
+
+block content 
+  form.form.center-form.col-md-8(method='post')
+    h2 Register User
+    .form-group.row
+      label.col-sm-2.col-form-label(for='username') Username
+      .col-sm-10
+        input#username.form-control(name='username', type='text' value=username)
+    .form-group.row
+      label.col-sm-2.col-form-label(for='password') Password
+      .col-sm-10
+        input#password.form-control(name='password', type='password')
+    .form-group.row
+      label.col-sm-2.col-form-label(for='confirmedPassword') Confirm Password
+      .col-sm-10
+        input#confirmedPassword.form-control(name='confirmedPassword', type='password')
+    .form-group.row
+      label.col-sm-2.col-form-label(for='firstName') First Name
+      .col-sm-10
+        input#firstName.form-control(name='firstName', type='text' value=firstName)
+    .form-group.row
+      label.col-sm-2.col-form-label(for='lastName') Last Name
+      .col-sm-10
+        input#lastName.form-control(name='lastName', type='text' value=lastName)
+    .form-group.row
+      label.col-sm-2.col-form-label(for='age') Age
+      .col-sm-10
+        input#age.form-control(name='age', type='number' value=age)  
+    .form-group.row
+      label.col-sm-2.col-form-label(for='gender') Gender
+      .col-sm-10
+        select#gender.form-control(name='gender')
+          option Male
+          option Female
+    .form-group.row
+      .col-sm-offset-2.col-sm-10
+        input.form-btn.btn.btn-primary(type='submit', value='Register')

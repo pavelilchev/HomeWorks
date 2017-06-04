@@ -10,6 +10,7 @@ database(config[environment])
 
 require('./config/express')(app, config[environment])
 require('./config/routes')(app)
+require('./config/passport')()
 
 app.listen(port, () => {
     console.log(`Server listen on port ${port}`)

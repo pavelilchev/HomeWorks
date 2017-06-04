@@ -1,0 +1,17 @@
+extends ../layout.pug
+
+block content 
+  form.form.center-form.col-md-6(method='post')
+    h2 Login
+    .form-group.row
+      label.col-sm-2.col-form-label(for='username') Username
+      .col-sm-10
+        input#username.form-control(name='username', type='text')
+    .form-group.row
+      label.col-sm-2.col-form-label(for='password') Password
+      .col-sm-10
+        input#password.form-control(name='password', type='password')
+   
+    .form-group
+      .col-sm-offset-2.col-sm-10
+        input.form-btn.btn.btn-primary(type='submit', value='Login')

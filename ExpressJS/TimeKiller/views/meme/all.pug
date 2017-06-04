@@ -1,0 +1,12 @@
+extends ../layout.pug
+
+block content
+  each m in memes
+    if counter % memes.length == 0
+      .row
+    
+        .single-meme.col-sm-4
+          h3= m.title
+          each t in m.tags
+            a.meme-tags(href=`/meme/hashtag/${t._id}`)= `#${t.name} `
+          img(src=`${m.image}`, alt=`${m.title}`)
