@@ -1,0 +1,14 @@
+extends ../layout.pug
+
+block content
+   form.form.center-form.col-md-6(method='post')
+    .row.form-group 
+      .single-meme.col-xs-12
+        h3= meme.title
+        img(src=`${meme.image}`, alt=`${meme.title}`)
+        
+        input#id.form-control.hidden(name='id', type='text' value=`${meme._id}`)
+
+    .form-group
+      .col-sm-10
+        input.form-btn.btn.btn-primary(type='submit', value='Remove')
