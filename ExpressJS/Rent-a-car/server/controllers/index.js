@@ -1,9 +1,9 @@
 const home = require('./home-controller')
 const users = require('./users-controller')
-const car = require('./car-controller')
+const cars = require('./cars-controller')
 
 module.exports = {
   home: home,
   users: users,
-  car: car
+  cars: cars
 }

@@ -1,0 +1,40 @@
+<div class="search">
+  <form action="/cars/all" method="GET">
+    <input type="text" name="search" required>
+    <input type="submit" value="Search">
+  </form>
+</div>
+
+{{#each cars}}
+<div class="single-car">
+  <h3>{{this.make}} {{this.model}} - {{this.year}}</h3>
+  <p>Price per day: {{this.pricePerDay}} BGN</p>
+  <img src="{{this.image}}" alt="{{this.make}} {{this.model}}"> {{#if ../currentUser}}
+  <form action="/cars/rent/{{this._id}}" method="POST">
+    <select name="days">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+        </select>
+    <input type="submit" value="Rent" />
+  </form>
+  {{/if}}
+</div>
+{{else}}
+<h2>No cars found!</h2>
+{{/each}}
+
+
+<div class="pagination">
+  {{#if hasPrevPage}}
+    <a href="/cars/all?page={{prevPage}}&search={{search}}">&lt;&lt;</a>
+    &nbsp; &nbsp; &nbsp;
+  {{/if}}
+  {{#if hasNextPage}}
+    <a href="/cars/all?page={{nextPage}}&search={{search}}">&gt;&gt;</a>
+  {{/if}}
+</div>

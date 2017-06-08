@@ -1,16 +1,79 @@
 h1 {
   color: red
 }
-.container {
-  padding-left: 25%
+
+h2{
+  text-align: center;
 }
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  background: #bababa;
+  padding: 10px 20%;
+}
+
 .menu {
   list-style-type: none;
   padding-left: 0;
 }
+
 .menu li {
-  display: inline-block
+  display: inline-block;
+  margin: 5px 15px;
 }
+
 .menu li:after {
   content: "\00a0";
+}
+
+.right{
+  float: right;
+}
+
+form div{
+  margin-bottom: 20px;
+}
+
+form label{
+  display: inline-block;
+  min-width: 100px;
+}
+
+form input{
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.error-msg{
+  background: lightcoral;
+  margin: 10px 10%;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.single-car{
+  margin: 40px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 600px;
+}
+
+.single-car img{
+  max-width: 400px;
+}
+
+.search{
+  display: inline-block;
+  margin: 40px 0 0 40px;
+}
+
+.pagination{
+  margin: 40px;
+  font-size: 2em;
 }
