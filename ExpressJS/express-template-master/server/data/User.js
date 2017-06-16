@@ -2,9 +2,11 @@ const mongoose = require('mongoose')
 const encryption = require('../utilities/encryption')
 
 const REQUIRED_VALIDATION_MESSAGE = '{PATH} is required'
+const USERNAME_MINLEN_MESSAGE = [4, 'The `{PATH}` should be at least ({MINLENGTH}) characters.']
+const USERNAME_MAXLEN_MESSAGE = [30, 'The `{PATH}` cannot be more than ({MAXLENGTH}) characters.']
 
 let userSchema = new mongoose.Schema({
-  username: { type: String, required: REQUIRED_VALIDATION_MESSAGE, unique: true },
+  username: { type: String, required: REQUIRED_VALIDATION_MESSAGE, unique: true, minlength: USERNAME_MINLEN_MESSAGE, maxlength: USERNAME_MAXLEN_MESSAGE },
   firstName: { type: String, required: REQUIRED_VALIDATION_MESSAGE },
   lastName: { type: String, required: REQUIRED_VALIDATION_MESSAGE },
   salt: String,
