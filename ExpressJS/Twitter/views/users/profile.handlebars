@@ -1,0 +1,9 @@
+<h1>Hello {{currentUser.username}}!</h1>
+{{#each tweets}}
+<div class="single-tweet">
+  <p>{{this.tweet}}</p>
+  <author><b>{{this.author.username}}</b></author>
+</div>
+{{else}}
+<h3>No tweets!</h3>
+{{/each}}

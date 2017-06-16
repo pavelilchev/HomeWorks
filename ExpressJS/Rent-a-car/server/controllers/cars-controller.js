@@ -55,5 +55,44 @@ module.exports = {
       .catch(error => {
         console.log(error)
       })
+  },
+  rent: (req, res) => {
+    let userId = req.user._id
+    let carId = req.params.id
+    let days = parseInt(req.body.days)
+
+    Car
+      .findById(carId)
+      .then(car => {
+        if (car.isRented) {
+          res.locals.globalError = 'Car is already rented!'
+          res.render('cars/all')
+          return
+        }
+
+        Renting
+          .create({
+            user: userId,
+            car: carId,
+            days: days,
+            totalPrice: car.pricePerDay * days
+          })
+          .then(renting => {
+            car.isRented = true
+            car
+              .save()
+              .then(car => {
+                res.redirect('/users/me')
+              })
+          })
+          .catch(err => {
+
+          })
+      })
+      .catch(err => {
+        let message = errorHandler.handleMongooseError(err)
+        res.locals.globalError = message
+        res.render('cars/all')
+      })
   }
 }

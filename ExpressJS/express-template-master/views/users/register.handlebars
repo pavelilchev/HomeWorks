@@ -1,15 +1,36 @@
-<form action="/users/register" method="POST">
-  Username
-  <input type="text" name="username" />
-  <br />
-  Password
-  <input type="password" name="password" />
-  <br />
-  First Name
-  <input type="text" name="firstName" />
-  <br />
-  Last Name
-  <input type="text" name="lastName" />
-  <br />
-  <input type="submit" value="Register" />
+<form action="/users/register" method="POST" class="form center-form col-md-6">
+  <h2>Login</h2>
+  <div class="form-group row">
+    <label for="username" class="col-sm-3 col-form-label">Username</label>
+    <div class="col-sm-9">
+      <input type="text" id="username" class="form-control" name="username">
+    </div>
+  </div>
+
+   <div class="form-group row">
+    <label for="password" class="col-sm-3 col-form-label">Password</label>
+    <div class="col-sm-9">
+      <input type="password" id="password" class="form-control" name="password">
+    </div>
+  </div>
+
+   <div class="form-group row">
+    <label for="firstName" class="col-sm-3 col-form-label">First Name</label>
+    <div class="col-sm-9">
+      <input type="text" id="firstName" class="form-control" name="firstName">
+    </div>
+  </div>
+
+     <div class="form-group row">
+    <label for="lasstName" class="col-sm-3 col-form-label">Last Name</label>
+    <div class="col-sm-9">
+      <input type="text" id="lasstName" class="form-control" name="lastName">
+    </div>
+  </div>
+
+   <div class="form-group row">
+    <div class="col-sm-offset-3 col-sm-9">
+      <input type="submit"  class="form-btn btn btn-primary" value="Register">
+    </div>
+  </div>
 </form>

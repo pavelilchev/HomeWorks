@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>My Cool Blog System</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="/css/site.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <ul class="menu">
+      <li><a href="/">Home</a></li>
+      <li><a href="/posts/list">Posts</a></li>
+      {{#if isAdmin}}
+      <li><a href="/admins/add">Add admin</a></li>
+      {{/if}}
+      {{#if currentUser}}
+      <li><a href="/posts/add">Add post</a></li>
+      <li class="right">
+        <form id="logout-form" action="/users/logout" method="POST"></form>
+        <a href="javascript:document.getElementById('logout-form').submit()">Logout</a>
+      </li>
+      <a href="/users/profile/{{currentUser.username}}">
+      <li class="right">{{currentUser.username}}</li></a>
+      {{else}}
+      <li class="right"><a href="/users/register">Register</a></li>
+      <li class="right"><a href="/users/login">Login</a></li>
+      {{/if}}
+    </ul>
+    {{#if globalError}}
+    <h3>{{globalError}}</h3>
+    {{/if}} 
+    
+    {{#if globalMessage}}
+    <h3>{{globalMessage}}</h3>
+    {{/if}} 
+    
+    
+    {{{body}}}
+    
+  </div>
+</body>
+
+</html>
