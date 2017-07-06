@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+nav.nvbar{
+  margin-bottom: 40px;
+}
+
+.single-book{
+  margin-bottom: 30px;
+  border: 1px solid #bababa;
+  border-radius: 5px;
+  min-height: 200px;
+}
+
+img {
+  max-width: 100%;
+  padding: 20px;
+}
