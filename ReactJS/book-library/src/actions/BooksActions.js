@@ -2,11 +2,12 @@ import dispatcher from '../dispatcher.js'
 
 let booksActions = {
   actionTypes: {
-    GET_ALL: 'GET_ALL'
+    DELETE: 'DELETE'
   },
-  all: () => {
+  delete: (id) => {
     dispatcher.dispatch({
-      type: this.actionTypes.GET_ALL
+      type: booksActions.actionTypes.DELETE,
+      id: id
     })
   }
 }

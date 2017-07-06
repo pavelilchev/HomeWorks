@@ -1,20 +1,34 @@
 import { EventEmitter } from 'events'
+import commentsActions from '../actions/CommentsActions'
 import dispatcher from '../dispatcher'
 import data from '../data/Data'
 
 class CommentStore extends EventEmitter {
-  getByBookId (id) {
+  getByBookId (bookId) {
     return new Promise((resolve, reject) => {
       data
-        .getCommentsByBookId(id)
+        .getCommentsByBookId(bookId)
         .then(respone => {
           resolve(respone)
         })
     })
   }
 
+  deleteById (id) {
+    return new Promise((resolve, reject) => {
+      data
+        .deleteCommentById(id)
+        .then(respone => {
+          this.emit(this.events.COMMENT_DELETED)
+        })
+    })
+  }
+
   handleAction (action) {
     switch (action.type) {
+      case commentsActions.types.DELETE_COMMENT:
+        this.deleteById(action.id)
+        break
       default:
         break
     }
@@ -23,7 +37,7 @@ class CommentStore extends EventEmitter {
 
 let commentStore = new CommentStore()
 commentStore.events = {
-  ALL: 'all'
+  COMMENT_DELETED: 'comment_deleted'
 }
 
 dispatcher.register(commentStore.handleAction.bind(commentStore))

@@ -1,11 +1,19 @@
 import React from 'react'
+import commentsActions from '../../actions/CommentsActions'
 
 export default class Comments extends React.Component {
+  delete (event) {
+    commentsActions.deleteById(event.target.value)
+  }
+
   render () {
     let comments = this.props.comments.map(c => {
       return (
         <li key={c.id}>
           {c.text}
+          <button className='btn btn-danger' value={c.id} onClick={this.delete.bind(this)}>
+            Delete
+          </button>
         </li>)
     })
 

@@ -1,3 +1,5 @@
+import $ from 'jquery'
+
 let users = []
 let books = [
   {id: 1, title: 'Book 1', author: 'Author 1', authorId: 1, date: '2017-07-06', img: 'http://smartmobilestudio.com/wp-content/uploads/2012/06/leather-book-preview.png', description: 'Some description', price: 69.69},
@@ -125,6 +127,33 @@ let data = {
       }
 
       resolve(result)
+    })
+  },
+  deleteBookById: (id) => {
+    return new Promise((resolve, reject) => {
+      books = $.grep(books, function (b) {
+        return b.id !== Number(id)
+      })
+
+      resolve('Done')
+    })
+  },
+  deleteAuthorById: (id) => {
+    return new Promise((resolve, reject) => {
+      authors = $.grep(authors, function (b) {
+        return b.id !== Number(id)
+      })
+
+      resolve('Done')
+    })
+  },
+  deleteCommentById: (id) => {
+    return new Promise((resolve, reject) => {
+      comments = $.grep(comments, function (b) {
+        return b.id !== Number(id)
+      })
+
+      resolve('Done')
     })
   }
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import authorsStore from '../../stores/AuthorsStore'
+import authorsActions from '../../actions/AuthorsActions'
 import booksStore from '../../stores/BooksStore'
 
 export default class AuthorDetailsPage extends React.Component {
@@ -11,6 +12,15 @@ export default class AuthorDetailsPage extends React.Component {
       author: {},
       books: []
     }
+
+    this.handleAuthorDelete = this.handleAuthorDelete.bind(this)
+
+    authorsStore.on(authorsStore.events.AUTHOR_DELETED,
+      this.handleAuthorDelete)
+  }
+
+  handleAuthorDelete (data) {
+    this.props.history.push('/authors/all')
   }
 
   componentDidMount () {
@@ -25,6 +35,10 @@ export default class AuthorDetailsPage extends React.Component {
             this.setState({books})
           })
       })
+  }
+
+  delete () {
+    authorsActions.deleteById(this.state.author.id)
   }
 
   render () {
@@ -44,6 +58,9 @@ export default class AuthorDetailsPage extends React.Component {
         <ol>
           {books}
         </ol>
+        <button className='btn btn-danger' onClick={this.delete.bind(this)}>
+          Delete Me!
+        </button>
       </div>
     )
   }

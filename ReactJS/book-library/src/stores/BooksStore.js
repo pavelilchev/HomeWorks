@@ -34,10 +34,20 @@ class BooksStore extends EventEmitter {
     })
   }
 
+  deleteById (id) {
+    return new Promise((resolve, reject) => {
+      data
+        .deleteBookById(id)
+        .then(respone => {
+          this.emit('book_deleted')
+        })
+    })
+  }
+
   handleAction (action) {
     switch (action.type) {
-      case booksActions.actionTypes.GET_ALL:
-        this.getAll()
+      case booksActions.actionTypes.DELETE:
+        this.deleteById(action.id)
         break
       default:
         break
@@ -47,7 +57,7 @@ class BooksStore extends EventEmitter {
 
 let booksStore = new BooksStore()
 booksStore.events = {
-  ALL: 'all'
+  BOOK_DELETED: 'book_deleted'
 }
 
 dispatcher.register(booksStore.handleAction.bind(booksStore))
