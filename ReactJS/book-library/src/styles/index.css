@@ -1,0 +1,33 @@
+@import '~toastr/build/toastr.css';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 0;
+}
+
+.error-message{
+  background: lightcoral;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.header-greeting{
+  padding: 15px;
+}
+
+.book-details-wrapper img{
+  max-width: 100%;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.authors-wrapper img{
+  max-width: 100%;
+}
