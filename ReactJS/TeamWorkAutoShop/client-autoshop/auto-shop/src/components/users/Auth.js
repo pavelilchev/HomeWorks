@@ -20,6 +20,16 @@ class Auth {
     return JSON.parse(userJson)
   }
 
+  static isAdmin () {
+    let userJson = JSON.parse(window.localStorage.getItem('user'))
+    let isAdmin = false
+    if (userJson) {
+      isAdmin = userJson.isAdmin
+    }
+
+    return isAdmin
+  }
+
   static getToken () {
     return window.localStorage.getItem('token')
   }

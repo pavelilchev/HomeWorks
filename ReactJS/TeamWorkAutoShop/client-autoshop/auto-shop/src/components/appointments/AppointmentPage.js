@@ -49,12 +49,13 @@ export default class AppointmentPage extends React.Component {
   }
 
   handleInputChange (event) {
-    let target = event.target
-    let value = target.value
-    let field = target.name
-    let appointment = this.state.appointment
-    appointment[field] = value
-    this.setState({appointment})
+let target = event.target
+let value = target.value
+let field = target.name
+let appointment = this.state.appointment
+appointment[field] = value
+this.setState({appointment})
+
   }
 
   handleSubmit (event) {

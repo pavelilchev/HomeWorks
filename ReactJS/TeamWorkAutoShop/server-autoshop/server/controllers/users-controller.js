@@ -69,7 +69,7 @@ module.exports = {
         const token = jwt.sign(payload, 's3cret str1ng')
         const data = {
           username: user.username,
-          userId: user._id
+          isAdmin: user.roles.indexOf('Admin') > -1
         }
 
         req.logIn(user, (err) => {

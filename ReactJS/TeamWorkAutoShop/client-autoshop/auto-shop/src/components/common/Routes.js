@@ -4,10 +4,12 @@ import HomePage from '../home/HomePage'
 import RegisterPage from '../users/RegisterPage'
 import LoginPage from '../users/LoginPage'
 import LogoutPage from '../users/LogoutPage'
-import PrivateRoute from '../common/PrivateRoute'
+import PrivateRoute from './PrivateRoute'
+import AdminRoute from './AdminRoute'
 import ReviewsPage from '../reviews/ReviewsPage'
 import AddReviewPage from '../reviews/AddReviewPage'
 import AppointmentPage from '../appointments/AppointmentPage'
+import AdminPage from '../admins/AdminPage'
 
 export default class Routes extends React.Component {
   render () {
@@ -21,6 +23,7 @@ export default class Routes extends React.Component {
         <Route path='/reviews/all' component={ReviewsPage} />
         <PrivateRoute path='/reviews/create' component={AddReviewPage} />
         <Route path='/appointment/create' component={AppointmentPage} />
+        <AdminRoute path='/admin/all' component={AdminPage} />
       </Switch>
     )
   }

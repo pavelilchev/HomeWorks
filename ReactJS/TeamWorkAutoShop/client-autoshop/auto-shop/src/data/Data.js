@@ -78,6 +78,13 @@ class Data {
       .fetch(`${baseURL}/appointment/add`, request)
       .then(handleResponseJSON())
   }
+
+  static getAllAppointments (option) {
+    let request = postRequest(null, true)
+    return window
+      .fetch(`${baseURL}/appointment/all?option=${option}`, request)
+      .then(handleResponseJSON())
+  }
 }
 
 export default Data

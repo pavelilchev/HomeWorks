@@ -10,7 +10,8 @@ let appointmentSchema = new mongoose.Schema({
   reason: { type: String },
   firstChoice: { type: Date, required: REQUIRED_VALIDATION_MESSAGE },
   secondChoice: { type: Date },
-  date: {type: mongoose.Schema.Types.Date, default: Date.now()}
+  date: {type: mongoose.Schema.Types.Date, default: Date.now()},
+  confirmed: {type: Boolean, default: false}
 })
 
 let Appointment = mongoose.model('Appointment', appointmentSchema)

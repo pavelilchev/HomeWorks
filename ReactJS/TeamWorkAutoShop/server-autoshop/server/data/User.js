@@ -37,7 +37,8 @@ module.exports.seedAdminUser = () => {
       lastName: 'Admin',
       salt: salt,
       hashedPass: hashedPass,
-      roles: ['Admin']
+roles: ['Admin']
+
     })
   })
 }

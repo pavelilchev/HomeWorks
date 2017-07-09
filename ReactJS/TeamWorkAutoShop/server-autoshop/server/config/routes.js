@@ -11,6 +11,7 @@ module.exports = (app) => {
   app.get('/reviews/count', controllers.reviews.count)
 
   app.post('/appointment/add', controllers.appointment.add)
+  app.post('/appointment/all', authCheck.isInRole('Admin'), controllers.appointment.all)
 
   app.all('*', (req, res) => {
     res.status(404).end()

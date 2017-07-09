@@ -12,6 +12,14 @@ class AppointmentStore extends EventEmitter {
       })
   }
 
+  getAll (option) {
+    Data
+      .getAllAppointments(option)
+      .then(response => {
+        this.emit(this.events.APPOINTMENTS_LOADED, response)
+      })
+  }
+
   handleAction (action) {
     switch (action.type) {
       case appointmentActions.actionTypes.APPOINTMENT_ADDED:
@@ -25,7 +33,8 @@ class AppointmentStore extends EventEmitter {
 
 let appointmentStore = new AppointmentStore()
 appointmentStore.events = {
-  APPOINTMENT_ADDED: 'appointment_added'
+  APPOINTMENT_ADDED: 'appointment_added',
+  APPOINTMENTS_LOADED: 'appointments_loaded'
 }
 
 dispatcher.register(appointmentStore.handleAction.bind(appointmentStore))

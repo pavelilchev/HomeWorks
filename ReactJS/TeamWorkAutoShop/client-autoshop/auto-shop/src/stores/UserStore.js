@@ -21,11 +21,12 @@ class UserStore extends EventEmitter {
   }
 
   logout () {
-    Data
-      .logoutUser()
-      .then(response => {
-        this.emit(this.events.LOGET_OUT, response)
-      })
+Data
+  .logoutUser()
+  .then(response => {
+    this.emit(this.events.LOGET_OUT, response)
+  })
+
   }
 
   handleAction (action) {

@@ -40,6 +40,30 @@ module.exports = {
           message: err.message
         })
       })
+  },
+  all: (req, res) => {
+    let option = req.query.option
+    let searched = {}
+    if (option === 'confirmed') {
+      searched = {confirmed: true}
+    } else if (option === 'unconfirmed') {
+      searched = {confirmed: false}
+    }
+    Appointment
+      .find(searched)
+      .then(appointsments => {
+        return res.status(200).json({
+          success: true,
+          message: 'Appointments loaded',
+          appointsments: appointsments
+        })
+      })
+      .catch(err => {
+        return res.status(200).json({
+          success: false,
+          message: err.message
+        })
+      })
   }
 }
 
@@ -89,7 +113,7 @@ function addAppointmentInfo (appointment) {
 
   let template = `
   Appointment form on your website was submitted with the following information:
-  
+
   Name: ${appointment.firstName}  ${appointment.lastName} 
   Email: ${appointment.email}
   Phone: ${appointment.phone}

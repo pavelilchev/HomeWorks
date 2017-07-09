@@ -1,9 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import UserMenu from './UserMenu'
+import Auth from '../users/Auth'
 
 export default class Navbar extends React.Component {
   render () {
+    let adminRoute = Auth.isAdmin()
+      ? (
+      <li>
+        <Link className='navbar-brand' to='/admin/all'> CP
+        </Link>
+      </li>)
+      : null
     return (
       <nav className='navbar navbar-default'>
         <div className='container'>
@@ -37,6 +45,7 @@ export default class Navbar extends React.Component {
                 <Link className='navbar-brand' to='/appointment/create'> Appointment
                 </Link>
               </li>
+              {adminRoute}
             </ul>
             <UserMenu />
           </div>
