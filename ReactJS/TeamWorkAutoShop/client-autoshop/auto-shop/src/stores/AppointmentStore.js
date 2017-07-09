@@ -20,10 +20,21 @@ class AppointmentStore extends EventEmitter {
       })
   }
 
+  confirm (id) {
+    Data
+      .confirmAppointment(id)
+      .then(response => {
+        this.emit(this.events.APPOINTMENT_CONFIRMED, response)
+      })
+  }
+
   handleAction (action) {
     switch (action.type) {
       case appointmentActions.actionTypes.APPOINTMENT_ADDED:
         this.create(action.appointment)
+        break
+      case appointmentActions.actionTypes.CONFIRM_APPOINTMENT:
+        this.confirm(action.id)
         break
       default:
         break
@@ -34,7 +45,8 @@ class AppointmentStore extends EventEmitter {
 let appointmentStore = new AppointmentStore()
 appointmentStore.events = {
   APPOINTMENT_ADDED: 'appointment_added',
-  APPOINTMENTS_LOADED: 'appointments_loaded'
+  APPOINTMENTS_LOADED: 'appointments_loaded',
+  APPOINTMENT_CONFIRMED: 'aapointmen_confirmed'
 }
 
 dispatcher.register(appointmentStore.handleAction.bind(appointmentStore))

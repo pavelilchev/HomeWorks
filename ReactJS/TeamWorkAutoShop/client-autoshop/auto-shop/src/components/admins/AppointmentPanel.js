@@ -1,15 +1,24 @@
 import React from 'react'
+import appointmentActions from '../../actions/AppointmentActions'
 
 export default class AppointmentPanel extends React.Component {
+  handleConformation (event) {
+    event.preventDefault()
+    let id = this.props.appointment._id
+    appointmentActions.confirm(id)
+  }
+
   render () {
     let appointment = this.props.appointment
     let name = `Name: ${appointment.firstName} ${appointment.lastName}`
-    let confirm = appointment.isConfirmed
-      ? null
+    let confirm = appointment.confirmed
+      ? (<p className='msg msg-success'>
+           Confirmed
+         </p>)
       : (
       <div className='row'>
-        <div className='col-sm-4'>
-          <button className='btn btn-primary'>
+        <div className='col-xs-12 col-centered'>
+          <button className='btn btn-primary' onClick={this.handleConformation.bind(this)}>
             Confirm
           </button>
         </div>

@@ -64,6 +64,29 @@ module.exports = {
           message: err.message
         })
       })
+  },
+  confirm: (req, res) => {
+    let id = req.body.id
+    Appointment
+      .findById(id)
+      .then(appointment => {
+        if (!appointment) {
+          return res.status(200).json({
+            success: false,
+            message: 'No such appointment'
+          })
+        }
+
+        appointment.confirmed = true
+        appointment
+          .save()
+          .then(data => {
+            return res.status(200).json({
+              success: true,
+              message: 'Appointment confirmed'
+            })
+          })
+      })
   }
 }
 

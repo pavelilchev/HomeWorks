@@ -126,3 +126,16 @@ main{
   margin: 10px 0;
   padding: 10px 0;
 }
+
+.single-appointment button{
+  margin: 10px;
+}
+
+.msg-success {
+  display: inline-block;
+  background: lightgreen;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}

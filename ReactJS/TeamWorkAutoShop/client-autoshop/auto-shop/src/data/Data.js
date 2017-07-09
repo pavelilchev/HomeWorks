@@ -85,6 +85,16 @@ class Data {
       .fetch(`${baseURL}/appointment/all?option=${option}`, request)
       .then(handleResponseJSON())
   }
+
+  static confirmAppointment (id) {
+    let body = {
+      id: id
+    }
+    let request = postRequest(body, true)
+    return window
+      .fetch(`${baseURL}/appointment/confirm`, request)
+      .then(handleResponseJSON())
+  }
 }
 
 export default Data

@@ -1,6 +1,4 @@
 import React from 'react'
-import adminStore from '../../stores/AdminStore'
-import adminActions from '../../actions/AdminActions'
 import appointmentStore from '../../stores/AppointmentStore'
 import AppointmentSelect from './AppointmentSelect'
 import AppoinmentsList from './AppoinmentsList'
@@ -17,9 +15,19 @@ export default class AdminPage extends React.Component {
     }
 
     this.handleAppointmentsLoad = this.handleAppointmentsLoad.bind(this)
+    this.loadAppointsment = this.loadAppointsment.bind(this)
     appointmentStore.on(
       appointmentStore.events.APPOINTMENTS_LOADED,
       this.handleAppointmentsLoad)
+
+    appointmentStore.on(
+      appointmentStore.events.APPOINTMENT_CONFIRMED,
+      this.loadAppointsment
+    )
+  }
+
+  loadAppointsment () {
+    appointmentStore.getAll(this.state.appointmentSelect)
   }
 
   handleAppointmentsLoad (data) {
@@ -45,7 +53,7 @@ export default class AdminPage extends React.Component {
 
   handleApointmentSelectSubmit (event) {
     event.preventDefault()
-    appointmentStore.getAll(this.state.appointmentSelect)
+    this.loadAppointsment()
   }
 
   render () {
