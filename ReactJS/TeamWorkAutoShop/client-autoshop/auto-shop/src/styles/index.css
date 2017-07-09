@@ -1,0 +1,65 @@
+@import '~toastr/build/toastr.css';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 0;
+}
+
+.navbar-brand {
+  padding: 7px 7px 0 0;
+}
+
+.error-message{
+  background: lightcoral;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.header-greeting{
+  padding: 15px;
+}
+
+.footer {
+  background: #bababa;
+  padding: 10px;
+}
+
+.leave-review {
+  display: inline-block;
+  background: lightskyblue;
+  margin: 20px;
+  text-decoration: none;
+  border: 1px solid #cecece;
+  border-radius: 10px;
+  padding: 10px 30px;
+}
+
+.leave-review:hover {
+  background: darkblue;
+  color: #fff;
+  text-decoration: none;
+}
+
+.single-review{
+  border-bottom: 1px solid #bababa;
+  margin-bottom: 20px;
+}
+
+.left-review div {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.left-review div:first-child {
+  border-right: 1px solid #bababa;
+}
+
+.right-review {
+  text-align: left;
+  padding-left: 10px;
+}
