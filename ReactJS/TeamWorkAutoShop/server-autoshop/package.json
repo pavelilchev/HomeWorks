@@ -1,24 +1,29 @@
 {
-  "name": "pets-system",
+  "name": "blog-system",
   "version": "0.0.1",
-  "description": "Pets system",
+  "description": "Blog System",
   "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
+  "engines": {
+    "node": "7.10.0",
+    "npm": "4.2.0"
   },
   "keywords": [
-    "pets",
+    "blog",
     "system"
   ],
-  "author": "Ivaylo Kenov",
+  "author": "IK",
   "license": "MIT",
   "dependencies": {
     "body-parser": "1.17.2",
+    "cookie-parser": "1.4.3",
     "cors": "2.8.3",
     "express": "4.15.3",
+    "express-handlebars": "3.0.0",
+    "express-session": "1.15.3",
     "jsonwebtoken": "7.4.1",
+    "mongoose": "4.10.4",
+    "nodemailer": "4.0.1",
     "passport": "0.3.2",
-    "passport-local": "1.0.0",
-    "validator": "7.2.0"
+    "passport-local": "1.0.0"
   }
 }

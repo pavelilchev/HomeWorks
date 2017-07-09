@@ -14,6 +14,7 @@ module.exports = (settings) => {
 
     console.log('MongoDB ready!')
     require('../data/Review')
+    require('../data/Appointment')
     User.seedAdminUser()
   })
 

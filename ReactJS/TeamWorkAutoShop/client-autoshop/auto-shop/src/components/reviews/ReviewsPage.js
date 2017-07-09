@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import ReactPaginate from 'react-paginate'
 import reviewsStore from '../../stores/ReviewsStore'
+
 import ReviewsList from './ReviewsList'
 
 export default class Name extends React.Component {
@@ -52,7 +53,7 @@ export default class Name extends React.Component {
 
   render () {
     return (
-      <div>
+      <div className='container'>
         <h2>Reviews</h2>
         <ReviewsList reviews={this.state.reviews} />
         <div className='row'>

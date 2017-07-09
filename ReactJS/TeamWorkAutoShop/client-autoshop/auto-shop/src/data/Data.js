@@ -71,6 +71,13 @@ class Data {
       .fetch(`${baseURL}/reviews/count`, request)
       .then(handleResponseJSON())
   }
+
+  static addAppointment (appointment) {
+    let request = postRequest(appointment)
+    return window
+      .fetch(`${baseURL}/appointment/add`, request)
+      .then(handleResponseJSON())
+  }
 }
 
 export default Data

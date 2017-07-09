@@ -10,6 +10,8 @@ module.exports = (app) => {
   app.post('/reviews/add', authCheck.isAuthorize, controllers.reviews.add)
   app.get('/reviews/count', controllers.reviews.count)
 
+  app.post('/appointment/add', controllers.appointment.add)
+
   app.all('*', (req, res) => {
     res.status(404).end()
   })

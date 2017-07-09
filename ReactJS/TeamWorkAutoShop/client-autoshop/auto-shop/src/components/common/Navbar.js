@@ -33,6 +33,10 @@ export default class Navbar extends React.Component {
                 <Link className='navbar-brand' to='/reviews/all'> Reviews
                 </Link>
               </li>
+              <li>
+                <Link className='navbar-brand' to='/appointment/create'> Appointment
+                </Link>
+              </li>
             </ul>
             <UserMenu />
           </div>

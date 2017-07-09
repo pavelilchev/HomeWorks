@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "flux": "3.1.2",
+    "google-map-react": "^0.24.0",
     "jquery": "3.2.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",

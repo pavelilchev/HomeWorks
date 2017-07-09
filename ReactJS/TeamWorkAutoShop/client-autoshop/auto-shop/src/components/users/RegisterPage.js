@@ -29,6 +29,12 @@ export default class RegisterPage extends React.Component {
       this.handleUserRegister)
   }
 
+  componentWillUnmount () {
+    userStore.removeListener(
+      userStore.events.REGISTER,
+      this.handleUserRegister)
+  }
+
   handleUserRegister (data) {
     if (!data.success) {
       let error = []
@@ -87,14 +93,16 @@ export default class RegisterPage extends React.Component {
 
   render () {
     return (
-      <div className='row'>
-        <div className='col-sm-8 col-md-6'>
-          <h2 className='text-left'>Register</h2>
-          <RegisterForm
-            user={this.state.user}
-            error={this.state.error}
-            onChange={this.handleInputChange}
-            onSubmit={this.handleSubmit} />
+      <div className='container'>
+        <div className='row'>
+          <div className='col-sm-8 col-md-6'>
+            <h2 className='text-left'>Register</h2>
+            <RegisterForm
+              user={this.state.user}
+              error={this.state.error}
+              onChange={this.handleInputChange}
+              onSubmit={this.handleSubmit} />
+          </div>
         </div>
       </div>
     )

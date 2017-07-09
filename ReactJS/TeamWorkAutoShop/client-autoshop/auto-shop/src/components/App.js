@@ -11,9 +11,7 @@ class App extends Component {
       <div className='App'>
         <Navbar />
         <main>
-          <div className='container'>
-            <Routes />
-          </div>
+          <Routes />
         </main>
         <Footer />
       </div>

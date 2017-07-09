@@ -1,12 +1,13 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
-import HomePage from '../HomePage'
+import HomePage from '../home/HomePage'
 import RegisterPage from '../users/RegisterPage'
 import LoginPage from '../users/LoginPage'
 import LogoutPage from '../users/LogoutPage'
 import PrivateRoute from '../common/PrivateRoute'
 import ReviewsPage from '../reviews/ReviewsPage'
 import AddReviewPage from '../reviews/AddReviewPage'
+import AppointmentPage from '../appointments/AppointmentPage'
 
 export default class Routes extends React.Component {
   render () {
@@ -19,6 +20,7 @@ export default class Routes extends React.Component {
         <PrivateRoute path='/users/logout' component={LogoutPage} />
         <Route path='/reviews/all' component={ReviewsPage} />
         <PrivateRoute path='/reviews/create' component={AddReviewPage} />
+        <Route path='/appointment/create' component={AppointmentPage} />
       </Switch>
     )
   }

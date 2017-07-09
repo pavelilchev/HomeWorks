@@ -26,6 +26,12 @@ export default class LoginPage extends React.Component {
       this.handleUserLogin)
   }
 
+  componentWillUnmount () {
+    userStore.removeListener(
+      userStore.events.LOGGEDIN,
+      this.handleUserLogin)
+  }
+
   handleUserLogin (data) {
     if (!data.success) {
       let error = []
@@ -70,14 +76,16 @@ export default class LoginPage extends React.Component {
 
   render () {
     return (
-      <div className='row'>
-        <div className='col-sm-8 col-md-6'>
-          <h2 className='text-left'>Login</h2>
-          <LoginForm
-            user={this.state.user}
-            error={this.state.error}
-            onChange={this.handleInputChange}
-            onSubmit={this.handleSubmit} />
+      <div className='container'>
+        <div className='row'>
+          <div className='col-sm-8 col-md-6'>
+            <h2 className='text-left'>Login</h2>
+            <LoginForm
+              user={this.state.user}
+              error={this.state.error}
+              onChange={this.handleInputChange}
+              onSubmit={this.handleSubmit} />
+          </div>
         </div>
       </div>
     )

@@ -21,6 +21,12 @@ export default class AddReviewPage extends React.Component {
       this.handleReviewAdded)
   }
 
+  componentWillUnmount () {
+    reviewsStore.removeListener(
+      reviewsStore.events.REVIEW_ADDED,
+      this.handleReviewAdded)
+  }
+
   handleReviewAdded (data) {
     if (!data.success) {
       let error = []
@@ -59,7 +65,7 @@ export default class AddReviewPage extends React.Component {
 
   render () {
     return (
-      <div>
+      <div className='container'>
         <h2>Please Leave a review</h2>
         <p>
           Thank you for writing a review. We value feedback from our customers.
