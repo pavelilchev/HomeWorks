@@ -9,7 +9,9 @@ export default class AuthorDetailsPage extends React.Component {
     super(props)
 
     this.state = {
-      author: {},
+      author: {
+        name: ''
+      },
       books: []
     }
 
@@ -28,6 +30,11 @@ export default class AuthorDetailsPage extends React.Component {
     authorsStore
       .getById(id)
       .then(author => {
+        if (!author) {
+          this.props.history.push('/')
+          return
+        }
+
         this.setState({author})
 
         booksStore.getByAuthorName(author.name)
@@ -47,7 +54,7 @@ export default class AuthorDetailsPage extends React.Component {
       return (
         <li key={b.id}>
           <Link to={`/books/${b.id}`}>
-          {b.title}
+            {b.title}
           </Link>
         </li>)
     })

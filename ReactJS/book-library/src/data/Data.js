@@ -155,6 +155,25 @@ let data = {
 
       resolve('Done')
     })
+  },
+  addBook: (book) => {
+    let id = books.length + 1
+    book.id = id
+    books.push(book)
+    return new Promise((resolve, reject) => {
+      resolve('Done')
+    })
+  },
+  addComment: (comment, bookId) => {
+    let id = comments.length + 1
+    let newComment = {}
+    newComment.id = id
+    newComment.bookId = bookId
+    newComment.text = comment.text
+    comments.push(newComment)
+    return new Promise((resolve, reject) => {
+      resolve('Done')
+    })
   }
 }
 

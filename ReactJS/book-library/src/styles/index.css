@@ -28,10 +28,6 @@ ul{
   list-style-type: none;
 }
 
-ul li {
-  margin-bottom: 10px;
-}
-
 ul li button{
   margin-left: 10px;
 }

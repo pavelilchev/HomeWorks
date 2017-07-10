@@ -9,8 +9,7 @@ export default class Navbar extends React.Component {
       ? rightMenu = (
         <ul className='nav navbar-nav navbar-right'>
           <li className='header-greeting'>
-            Hello,
-            {Auth.getUser().username}
+            Hello, {Auth.getUser().username}
           </li>
           <li>
             <Link to='/user/logout'> Login
@@ -54,6 +53,10 @@ export default class Navbar extends React.Component {
               </li>
               <li>
                 <Link className='navbar-brand' to='/books/all'> Books
+                </Link>
+              </li>
+              <li>
+                <Link className='navbar-brand' to='/books/add'> Add Book
                 </Link>
               </li>
               <li>
