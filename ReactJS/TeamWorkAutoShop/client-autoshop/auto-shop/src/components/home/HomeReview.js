@@ -5,11 +5,15 @@ export default class HomeReview extends React.Component {
     let review = this.props.review
     return (
       <div className='home-reviews'>
-        <h2>What our clients says</h2>
-        <h4><i>from {review.author.username}</i></h4>
-        <p>
-          {review.text}
-        </p>
+        <div className='container'>
+          <div className='col-md-8 col-md-offset-2 quotes'>
+            <h2>What our clients says</h2>
+            <h4><i>from {review.author.username}</i></h4>
+            <p>
+              {review.text}
+            </p>
+          </div>
+        </div>
       </div>
     )
   }
