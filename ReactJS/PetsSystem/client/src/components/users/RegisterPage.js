@@ -4,6 +4,7 @@ import userActions from '../../actions/UserActions'
 import userStore from '../../stores/UserStore'
 import toastr from 'toastr'
 import ErrorHelper from '../../utils/ErrorHelper'
+import FormHelper from '../forms/FormHelper'
 
 export default class RegisterPage extends React.Component {
   constructor (props) {
@@ -11,13 +12,12 @@ export default class RegisterPage extends React.Component {
 
     this.state = {
       user: {
-        username: '',
-        firstName: '',
-        lastName: '',
+        name: '',
+        email: '',
         password: '',
         confirmPassword: ''
       },
-      error: []
+      errors: []
     }
 
     this.handleInputChange = this.handleInputChange.bind(this)
@@ -51,40 +51,31 @@ export default class RegisterPage extends React.Component {
   }
 
   handleInputChange (event) {
-    let target = event.target
-    let value = target.value
-    let field = target.name
-    let user = this.state.user
-    user[field] = value
-    this.setState({user})
+    FormHelper.handleInputChange.bind(this)(event, 'user')
   }
 
   handleSubmit (event) {
     event.preventDefault()
     let user = this.state.user
-    let error = []
-    if (!user.username) {
-      error.push('Please enter username')
+    let errors = []
+    if (!user.name) {
+      errors.push('Please enter your Name')
     }
 
-    if (!user.firstName) {
-      error.push('Please enter your First Name')
-    }
-
-    if (!user.lastName) {
-      error.push('Please enter your Last Name')
+    if (!user.email) {
+      errors.push('Please enter your Email')
     }
 
     if (!user.password) {
-      error.push('Please enter your Password')
+      errors.push('Please enter your Password')
     }
 
     if (user.password !== user.confirmPassword) {
-      error.push('Passwords do not match')
+      errors.push('Passwords do not match')
     }
 
-    if (error.length > 0) {
-      this.setState({error})
+    if (errors.length > 0) {
+      this.setState({errors})
       return
     }
 
@@ -99,7 +90,7 @@ export default class RegisterPage extends React.Component {
             <h2 className='text-left'>Register</h2>
             <RegisterForm
               user={this.state.user}
-              error={this.state.error}
+              error={this.state.errors}
               onChange={this.handleInputChange}
               onSubmit={this.handleSubmit} />
           </div>

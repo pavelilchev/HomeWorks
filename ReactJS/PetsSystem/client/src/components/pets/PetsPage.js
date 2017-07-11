@@ -1,8 +1,8 @@
 import React from 'react'
 import petStore from '../../stores/PetStore'
-import PetsList from '../pets/PetsList'
+import PetsList from './PetsList'
 
-export default class Name extends React.Component {
+export default class PetsPage extends React.Component {
   constructor (props) {
     super(props)
 
@@ -35,11 +35,32 @@ export default class Name extends React.Component {
     petStore.getAll(page)
   }
 
+  handlePagination (event) {
+    event.preventDefault()
+
+    let target = event.target
+    let value = target.value
+    let page = this.state.page
+    if (value === 'Prev') {
+      page = page - 1
+    } else {
+      page = page + 1
+    }
+
+    this.setState({page})
+    this.loadPets(page)
+  }
+
   render () {
     return (
       <div className='container'>
-        <h2>Welcome to Pets Social Network</h2>
         <PetsList pets={this.state.pets} />
+        <button onClick={this.handlePagination.bind(this)} value='Prev' className='pagination'>
+          Prev
+        </button>
+        <button onClick={this.handlePagination.bind(this)} value='Next' className='pagination'>
+          Next
+        </button>
       </div>
     )
   }

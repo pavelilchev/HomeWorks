@@ -31,68 +31,42 @@ class Data {
   static registerUser (user) {
     let request = postRequest(user)
     return window
-      .fetch(`${baseURL}/users/register`, request)
+      .fetch(`${baseURL}/auth/signup`, request)
       .then(handleResponseJSON())
   }
 
   static loginUser (user) {
     let request = postRequest(user)
     return window
-      .fetch(`${baseURL}/users/login`, request)
+      .fetch(`${baseURL}/auth/login`, request)
       .then(handleResponseJSON())
   }
 
   static logoutUser () {
     let request = postRequest(null, true)
     return window
-      .fetch(`${baseURL}/users/logout`, request)
+      .fetch(`${baseURL}/auth/logout`, request)
       .then(handleResponseJSON())
   }
 
-  static getAllReviews (page) {
+  static createPet (pet) {
+    let request = postRequest(pet, true)
+    return window
+      .fetch(`${baseURL}/pets/create`, request)
+      .then(handleResponseJSON())
+  }
+
+  static getAllPets (page) {
     let request = getRequest()
     return window
-      .fetch(`${baseURL}/reviews/all?page=${page}`, request)
+      .fetch(`${baseURL}/pets/all?page=${page}`, request)
       .then(handleResponseJSON())
   }
 
-  static addReview (review) {
-    let request = postRequest(review, true)
-
+  static getPetById (id) {
+    let request = getRequest(null, true)
     return window
-      .fetch(`${baseURL}/reviews/add`, request)
-      .then(handleResponseJSON())
-      .catch(handleResponseJSON())
-  }
-
-  static getReviewsCount () {
-    let request = getRequest()
-    return window
-      .fetch(`${baseURL}/reviews/count`, request)
-      .then(handleResponseJSON())
-  }
-
-  static addAppointment (appointment) {
-    let request = postRequest(appointment)
-    return window
-      .fetch(`${baseURL}/appointment/add`, request)
-      .then(handleResponseJSON())
-  }
-
-  static getAllAppointments (option) {
-    let request = postRequest(null, true)
-    return window
-      .fetch(`${baseURL}/appointment/all?option=${option}`, request)
-      .then(handleResponseJSON())
-  }
-
-  static confirmAppointment (id) {
-    let body = {
-      id: id
-    }
-    let request = postRequest(body, true)
-    return window
-      .fetch(`${baseURL}/appointment/confirm`, request)
+      .fetch(`${baseURL}/pets/details/${id}`, request)
       .then(handleResponseJSON())
   }
 }

@@ -9,19 +9,15 @@ export default class RegisterForm extends React.Component {
     return (
       <form className='form-horizontal' onSubmit={this.props.onSubmit}>
         <Input
-          name='username'
-          placeholder='Username'
-          value={user.username}
+          name='name'
+          placeholder='Name'
+          value={user.name}
           onChange={this.props.onChange} />
         <Input
-          name='firstName'
-          placeholder='First Name'
-          value={user.firstName}
-          onChange={this.props.onChange} />
-        <Input
-          name='lastName'
-          placeholder='Last Name'
-          value={user.lastName}
+          type='email'
+          name='email'
+          placeholder='Email'
+          value={user.email}
           onChange={this.props.onChange} />
         <Input
           type='password'

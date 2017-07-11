@@ -9,9 +9,9 @@ export default class LoginForm extends React.Component {
     return (
       <form className='form-horizontal' onSubmit={this.props.onSubmit}>
         <Input
-          name='username'
-          placeholder='Username'
-          value={user.username}
+          name='email'
+          placeholder='Email'
+          value={user.email}
           onChange={this.props.onChange} />
         <Input
           type='password'

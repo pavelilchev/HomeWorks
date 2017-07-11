@@ -1,17 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import UserMenu from './UserMenu'
-import Auth from '../users/Auth'
 
 export default class Navbar extends React.Component {
   render () {
-    let adminRoute = Auth.isAdmin()
-      ? (
-        <li>
-          <Link className='navbar-brand' to='/admin/all'> CP
-        </Link>
-        </li>)
-      : null
     return (
       <nav className='navbar navbar-default'>
         <div className='container'>
@@ -27,8 +19,7 @@ export default class Navbar extends React.Component {
               <span className='icon-bar' />
               <span className='icon-bar' />
             </button>
-            <Link className='navbar-brand' to='/'>
-              PETS
+            <Link className='navbar-brand' to='/'> PETS
             </Link>
           </div>
           <div className='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
@@ -38,14 +29,13 @@ export default class Navbar extends React.Component {
                 </Link>
               </li>
               <li>
-                <Link className='navbar-brand' to='/reviews/all'> Reviews
+                <Link className='navbar-brand' to='/pets/create'> Add Pet
                 </Link>
               </li>
               <li>
-                <Link className='navbar-brand' to='/appointment/create'> Appointment
+                <Link className='navbar-brand' to='/pets/all'> Pets
                 </Link>
               </li>
-              {adminRoute}
             </ul>
             <UserMenu />
           </div>

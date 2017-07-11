@@ -12,11 +12,15 @@ export default class Error extends React.Component {
     this.props.error.length === 0
       ? null
       : (
-        <div className='error-message text-left'>
-          <ul>
-            {errors}
-          </ul>
-        </div>)
+      <div className='row'>
+        <div className='col-md-offset-4 col-md-8'>
+          <div className='error-message text-left'>
+            <ul>
+              {errors}
+            </ul>
+          </div>
+        </div>
+      </div>)
     )
   }
 }

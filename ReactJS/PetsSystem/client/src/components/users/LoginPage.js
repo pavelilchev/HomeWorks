@@ -11,7 +11,7 @@ export default class LoginPage extends React.Component {
 
     this.state = {
       user: {
-        username: '',
+        email: '',
         password: ''
       },
       error: []
@@ -58,8 +58,8 @@ export default class LoginPage extends React.Component {
     event.preventDefault()
     let user = this.state.user
     let error = []
-    if (!user.username) {
-      error.push('Please enter your username')
+    if (!user.email) {
+      error.push('Please enter your Email')
     }
 
     if (!user.password) {

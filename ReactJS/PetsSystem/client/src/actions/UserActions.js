@@ -1,5 +1,4 @@
 import dispatcher from '../dispatcher.js'
-
 let userActions = {
   actionTypes: {
     LOGIN: 'LOGIN',
