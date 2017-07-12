@@ -10,6 +10,7 @@ import ReviewsPage from '../reviews/ReviewsPage'
 import AddReviewPage from '../reviews/AddReviewPage'
 import AppointmentPage from '../appointments/AppointmentPage'
 import AdminPage from '../admins/AdminPage'
+import ReviewEditPage from '../admins/ReviewEditPage'
 
 export default class Routes extends React.Component {
   render () {
@@ -24,6 +25,7 @@ export default class Routes extends React.Component {
         <PrivateRoute path='/reviews/create' component={AddReviewPage} />
         <Route path='/appointment/create' component={AppointmentPage} />
         <AdminRoute path='/admin/all' component={AdminPage} />
+        <AdminRoute path='/reviews/edit/:id' component={ReviewEditPage} />
       </Switch>
     )
   }

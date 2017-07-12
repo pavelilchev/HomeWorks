@@ -5,13 +5,33 @@ module.exports = {
   all: (req, res) => {
     const page = parseInt(req.query.page) || 1
 
-    Review.find({})
+    Review.find({published: true})
       .populate('author')
       .sort('-date')
       .skip(reviewsPerPage * (page - 1))
       .limit(reviewsPerPage)
       .then(reviews => {
         res.status(200).json(reviews)
+      })
+  },
+  getReview: (req, res) => {
+    let id = req.params.id
+    Review
+      .findById(id)
+      .populate('author')
+      .then(review => {
+        if (!review) {
+          return res.status(200).json({
+            success: false,
+            message: "This review dosen't exist"
+          })
+        }
+
+        return res.status(200).json({
+          success: true,
+          message: 'You have successfully loaded review',
+          review: review
+        })
       })
   },
   add: (req, res) => {
@@ -53,6 +73,75 @@ module.exports = {
           count: reviews.length
         }
         res.status(200).json(count)
+      })
+  },
+  allSelected: (req, res) => {
+    let searched = {}
+    if (req.query.options !== 'all') {
+      searched = {published: req.query.options === 'published'}
+    }
+
+    Review.find(searched)
+      .populate('author')
+      .then(reviews => {
+        return res.status(200).json({
+          success: true,
+          message: 'You have successfully loaded selected reviews',
+          reviews: reviews
+        })
+      })
+      .catch(err => {
+        return res.status(200).json({
+          success: false,
+          message: err.message
+        })
+      })
+  },
+  deleteReview: (req, res) => {
+    let id = req.params.id
+    Review
+      .findByIdAndRemove(id)
+      .then(review => {
+        if (!review) {
+          return res.status(200).json({
+            success: false,
+            message: "This review dosen't exist"
+          })
+        }
+
+        return res.status(200).json({
+          success: true,
+          message: 'You have successfully delete review',
+          review: review
+        })
+      })
+  },
+  edit: (req, res) => {
+    let reviewReq = req.body
+
+    Review
+      .findById(reviewReq._id)
+      .then(review => {
+        if (!review) {
+          return res.status(200).json({
+            success: false,
+            message: "This review dosen't exist"
+          })
+        }
+
+        review.text = reviewReq.text || review.text
+        review.rating = reviewReq.rating || review.rating
+        review.published = reviewReq.published
+
+        review
+          .save()
+          .then(review => {
+            return res.status(200).json({
+              success: true,
+              message: 'You have successfully edit review',
+              review: review
+            })
+          })
       })
   }
 }

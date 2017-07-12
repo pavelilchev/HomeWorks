@@ -56,6 +56,27 @@ class Data {
       .then(handleResponseJSON())
   }
 
+  static getReviewById (id) {
+    let request = getRequest(null, true)
+    return window
+      .fetch(`${baseURL}/reviews/get/${id}`, request)
+      .then(handleResponseJSON())
+  }
+
+  static editReview (review) {
+    let request = postRequest(review, true)
+    return window
+      .fetch(`${baseURL}/reviews/edit/${review._id}`, request)
+      .then(handleResponseJSON())
+  }
+
+  static getSelectedReviews (options) {
+    let request = getRequest(null, true)
+    return window
+      .fetch(`${baseURL}/reviews/allSelected?options=${options}`, request)
+      .then(handleResponseJSON())
+  }
+
   static addReview (review) {
     let request = postRequest(review, true)
 
@@ -70,6 +91,15 @@ class Data {
     return window
       .fetch(`${baseURL}/reviews/count`, request)
       .then(handleResponseJSON())
+  }
+
+  static deleteReviewById (id) {
+    let request = postRequest(null, true)
+
+    return window
+      .fetch(`${baseURL}/reviews/delete/${id}`, request)
+      .then(handleResponseJSON())
+      .catch(handleResponseJSON())
   }
 
   static addAppointment (appointment) {

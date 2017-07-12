@@ -12,10 +12,9 @@ export default class ReviewsList extends React.Component {
     }
 
     return (
-<div className='container'>
-  {reviews}
-</div>
-
+      <div className='container'>
+        {reviews}
+      </div>
     )
   }
 }

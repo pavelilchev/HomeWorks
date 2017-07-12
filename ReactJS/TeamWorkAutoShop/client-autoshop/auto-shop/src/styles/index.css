@@ -207,12 +207,6 @@ h2 {
   margin: 20px 0;
 }
 
-.review-rating{
-  background: url('../images/stars.png') right no-repeat;
-  height: 30px;
-  display: block;
-}
-
 .home-review-rating {
   background: url('../images/stars.png') center no-repeat;
   height: 30px;
@@ -220,21 +214,51 @@ h2 {
 }
 
 .review-rating-5 {
+  background: url('../images/stars.png') right no-repeat;
+  height: 30px;
+  display: block;
   background-position-y: -138px;
 }
 
 .review-rating-4 {
+  background: url('../images/stars.png') right no-repeat;
+  height: 30px;
+  display: block;
   background-position-y: -110px;
 }
 
 .review-rating-3 {
+  background: url('../images/stars.png') right no-repeat;
+  height: 30px;
+  display: block;
   background-position-y: -83px;
 }
 
 .review-rating-2 {
+  background: url('../images/stars.png') right no-repeat;
+  height: 30px;
+  display: block;
   background-position-y: -56px;
 }
 
 .review-rating-1 {
+  background: url('../images/stars.png') right no-repeat;
+  height: 30px;
+  display: block;
   background-position-y: -28px;
+}
+
+.admin-page form{
+  text-align: left;
+  margin: 20px;
+}
+
+.admin-single-review{
+  border: 1px dashed #bababa;
+  padding: 10px;
+  margin: 5px;
+}
+
+.admin-single-review button{
+  margin: 5px;
 }
