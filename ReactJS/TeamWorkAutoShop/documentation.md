@@ -5,3 +5,4 @@ Auto shop Web site
 (shop manager has a email notification when appointment is shedued)
 3. Register users can leave a review
 4. Admin can search appointments by criteria and can confirm appointment
+5. Admin can full controll over eviews - edit, delete, unpublish
