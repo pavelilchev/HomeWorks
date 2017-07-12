@@ -17,7 +17,7 @@ export default class HomePage extends React.Component {
       reviews: [],
       review: {
         author: {},
-        tetx: ''
+        text: ''
       },
       index: 0
     }

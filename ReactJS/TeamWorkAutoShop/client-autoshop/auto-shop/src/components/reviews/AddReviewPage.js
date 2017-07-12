@@ -10,7 +10,8 @@ export default class AddReviewPage extends React.Component {
 
     this.state = {
       review: {
-        text: ''
+        text: '',
+        rating: ''
       },
       error: []
     }
@@ -53,6 +54,11 @@ export default class AddReviewPage extends React.Component {
     let error = []
     if (!review.text || review.text.trim().length === 0) {
       error.push('Review text cannot be empty')
+    }
+
+    let rating = Number(review.rating)
+    if (typeof rating !== 'number' || rating < 1 || rating > 5) {
+      error.push('Please select valid rating')
     }
 
     if (error.length > 0) {

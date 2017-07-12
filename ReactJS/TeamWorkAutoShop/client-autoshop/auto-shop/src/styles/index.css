@@ -88,6 +88,7 @@ h2 {
 
 .home-reviews .quotes{
   margin-top: 40px;
+  padding: 0 40px;
   position: relative;
 }
 
@@ -181,4 +182,59 @@ h2 {
   margin: 10px;
   border: 1px solid #000;
   border-radius: 5px;
+}
+
+.review-rating{
+  padding: 0;
+  list-style-type: none;
+}
+
+.review-rating li{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.review-rating span{
+  display: block;
+  text-align: center;
+}
+
+.review-add-btn div{
+  margin: 0;
+}
+
+.review-add-text{
+  margin: 20px 0;
+}
+
+.review-rating{
+  background: url('../images/stars.png') right no-repeat;
+  height: 30px;
+  display: block;
+}
+
+.home-review-rating {
+  background: url('../images/stars.png') center no-repeat;
+  height: 30px;
+  display: block;
+}
+
+.review-rating-5 {
+  background-position-y: -138px;
+}
+
+.review-rating-4 {
+  background-position-y: -110px;
+}
+
+.review-rating-3 {
+  background-position-y: -83px;
+}
+
+.review-rating-2 {
+  background-position-y: -56px;
+}
+
+.review-rating-1 {
+  background-position-y: -28px;
 }

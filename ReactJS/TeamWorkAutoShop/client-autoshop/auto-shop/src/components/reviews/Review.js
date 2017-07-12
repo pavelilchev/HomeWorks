@@ -12,6 +12,7 @@ export default class Review extends React.Component {
           <div>
             {new Date(review.date).toLocaleDateString()}
           </div>
+          <div className={`review-rating review-rating-${review.rating}`} />
         </div>
         <div className='col-sm-9 right-review'>
           {review.text}
