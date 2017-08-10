@@ -1,0 +1,43 @@
+agm-map{
+    height: 400px;
+}
+
+.google-map{
+    border-top: 2px solid #666;
+    border-bottom: 2px solid #666;
+}
+
+.home-services{
+    text-align: center;
+}
+
+.home-services h2{
+    font-size: 3em;
+    color: red;
+    margin-top:80px;
+}
+
+.home-services ul{
+  display: inline-block;
+  list-style-type: none;
+  text-align: left;
+  margin: 40px;
+  padding: 0;
+}
+
+.home-services ul li{
+  font-size: 1.5em;
+  position: relative;
+  padding-left: 20px;
+}
+
+.home-services ul li::before{
+  color: green;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  content: '✓';
+}

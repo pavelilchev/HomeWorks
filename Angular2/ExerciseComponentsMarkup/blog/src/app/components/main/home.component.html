@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="col-md-3">
+    <asidebar [articles]="articles" (onArticleClick)="onArticleClick($event)"></asidebar>
+  </div>
+  <div class="col-md-9">
+    <div class="row">
+      <div class="col-xs-12">
+        <span>select font </span>
+        <button (click)="fontChange('down')">-</button>
+        <button (click)="fontChange('up')">+</button>
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-xs-12">
+        <span>select colors </span>
+        <select name="color" id="color" (change)="onColorChange($event)">
+          <option value="white">white</option>
+          <option value="black">black</option>
+          <option value="red">red</option>
+        </select>
+         <select name="background" id="background" (change)="onBackground($event)">
+          <option value="white">white</option>
+          <option value="black">black</option>
+          <option value="yellow">yellow</option>
+        </select>
+      </div>
+    </div>
+    <h2>{{article.title}}</h2>
+    <h4>from <i>{{article.author}}</i></h4>
+    <p  [style.font-size.px]="fontSize" 
+        [style.color]="color" 
+        [style.background]="background" > <img src={{article.image}} alt={{article.title}}> {{article.description}}
+    </p>
+
+  </div>
+</div>

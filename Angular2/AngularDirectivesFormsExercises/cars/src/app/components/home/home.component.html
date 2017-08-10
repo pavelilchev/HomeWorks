@@ -1,0 +1,12 @@
+<h1>Welcome to our Car Store</h1>
+<div class="row">
+    <div class="col-xs-12">
+        <form #searchForm="ngForm" (ngSubmit)="handleSearch()">
+            <input type="text" name="search" placeholder="search..."  [(ngModel)]="search" >
+            <input type="submit" text="Go">
+        </form>
+    </div>
+</div>
+<div class="row">
+    <car *ngFor="let car of cars | async" [car]="car"></car>
+</div>

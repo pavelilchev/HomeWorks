@@ -1,0 +1,33 @@
+<h1>GitHub Profile Info</h1>
+<div class="row">
+    <div class="col-xs-12">
+        <p>Name: {{githubInfo?.name}}</p>
+        <img src={{githubInfo?.avatar_url}} alt="">
+        <h3>Personal info</h3>
+        <ul>
+            <li>Blog: <a href={{githubInfo?.blog}} target="_blank">{{githubInfo?.blog}}</a></li>
+            <li>Location: {{githubInfo?.location}}</li>
+            <li>Email: {{githubInfo?.email}}</li>
+            <li>Bio: {{githubInfo?.bio}}</li>
+        </ul>
+
+        <p>Public Repos: {{githubInfo?.public_repos}}</p>
+        <p>Followers: {{githubInfo?.followers}}</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <button class="btn btn-primary" (click)='getFollowers()'>
+          Show Followers
+      </button>
+    </div>
+    <div class="col-md-6">
+        <button class="btn btn-primary" (click)='getRepos()'>
+          Show Repos
+      </button>
+    </div>
+</div>
+<follower *ngFor="let follower of followers" [follower]="follower"></follower>
+
+<repo *ngFor="let repo of repos" [repo]="repo"></repo>

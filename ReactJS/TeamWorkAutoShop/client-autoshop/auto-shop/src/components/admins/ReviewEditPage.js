@@ -30,7 +30,7 @@ export default class ReviewEditPage extends React.Component {
 
     reviewsStore.on(
       reviewsStore.events.REVIEW_EDITED,
-      this.handleReviewEdited    )
+      this.handleReviewEdited)
   }
 
   handleReviewLoad (data) {

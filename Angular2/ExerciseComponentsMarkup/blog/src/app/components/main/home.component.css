@@ -1,0 +1,9 @@
+img{
+    max-width: 200px;
+    float: left;
+    margin: 10px 20px 20px 0;
+}
+
+.row{
+    margin-top: 20px;
+}

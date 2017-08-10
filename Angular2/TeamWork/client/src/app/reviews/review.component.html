@@ -1,0 +1,14 @@
+<div class='single-review row'>
+    <div class='col-sm-3 left-review'>
+        <div>
+            {{review.author.username}}
+        </div>
+        <div>
+            {{review.date}}
+        </div>
+        <div class='review-rating review-rating-{{review.rating}}'></div>
+    </div>
+    <div class='col-sm-9 right-review'>
+        {{review.text}}
+    </div>
+</div>

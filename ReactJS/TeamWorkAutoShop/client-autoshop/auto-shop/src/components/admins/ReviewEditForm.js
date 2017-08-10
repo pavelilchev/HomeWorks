@@ -14,7 +14,7 @@ export default class ReviewEditForm extends React.Component {
               Author:
               {` ${review.author.firstName} ${review.author.latsName || ''}`}
             </p>
-            <ul className='review-rating'>
+            <ul className='admin-review-rating'>
               <li>
                 <span>1</span>
                 <input

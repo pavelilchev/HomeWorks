@@ -1,0 +1,11 @@
+.navbar {
+    margin: 0;
+}
+
+.navbar-header .navbar-brand {
+  padding: 7px 15px;
+}
+
+.navbar-header .navbar-brand:hover {
+  opacity: 0.8;
+}

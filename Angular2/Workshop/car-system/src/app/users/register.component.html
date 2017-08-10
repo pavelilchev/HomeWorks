@@ -1,0 +1,43 @@
+<div class="row">
+    <div class="col-md-6">
+        <form class='form-horizontal' #registerUserForm="ngForm" (ngSubmit)="onRegisterUser()">
+            <h1 class="text-center">Register:</h1>
+            <h1>{{registeredUser}}</h1>
+            <div class='form-group'>
+                <label for='name' class='col-sm-4 control-label'>Name</label>
+                <div class='col-sm-8'>
+                    <input type="text" name="name" id="name" [(ngModel)]="user.name" #name="ngModel" class='form-control' required>
+                </div>
+            </div>
+
+            <div class='form-group'>
+                <label for='email' class='col-sm-4 control-label'>Email</label>
+                <div class='col-sm-8'>
+                    <input type="email" name="email" id="email" [(ngModel)]="user.email" #email="ngModel" class='form-control' required>
+                </div>
+            </div>
+
+            <div class='form-group'>
+                <label for='password' class='col-sm-4 control-label'>Password</label>
+                <div class='col-sm-8'>
+                    <input type="password" name="password" id="password" [(ngModel)]="user.password" #password="ngModel" class='form-control'
+                        required>
+                </div>
+            </div>
+
+            <div class='form-group'>
+                <label for='confirmPassword' class='col-sm-4 control-label'>Confirm Password</label>
+                <div class='col-sm-8'>
+                    <input type="password" name="confirmPassword" id="confirmPassword" [(ngModel)]="user.confirmPassword" #confirmPassword="ngModel"
+                        class='form-control' required>
+                </div>
+            </div>
+
+            <div class='form-group'>
+                <div class='col-sm-offset-4 col-sm-8 text-left'>
+                    <input type="submit" value="Register" class='btn btn-primary' [disabled]="!registerUserForm.form.valid">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

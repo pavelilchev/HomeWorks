@@ -1,0 +1,6 @@
+<div class="sidebar">
+    <h2>Articles</h2>
+    <ul>
+        <li *ngFor="let article of articles" (click)="articleClick(article)">{{article.title}}</li>
+    </ul>
+</div>

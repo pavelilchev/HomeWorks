@@ -1,0 +1,44 @@
+<div>
+    <div class='slideshow'>
+        <img src='../../assets/images/slideshow-1.jpg' alt='Slideshow' class='img-responsive' />
+    </div>
+    <!-- <HomeReview review={this.state.review} /> -->
+    <div class="container">
+        <div class='home-services row'>
+            <h2>What services we offer</h2>
+            <ul>
+                <li>
+                    Air Conditioning
+                </li>
+                <li>
+                    Alternator's
+                </li>
+                <li>
+                    Axles
+                </li>
+                <li>
+                    Ball Joints
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    Batteries
+                </li>
+                <li>
+                    Belts
+                </li>
+                <li>
+                    Brakes
+                </li>
+                <li>
+                    Check Engine Light
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="google-map">
+        <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [scrollwheel]="scrollwheel">
+            <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+        </agm-map>
+    </div>
+</div>
