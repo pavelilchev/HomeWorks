@@ -1,0 +1,49 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <main>
+        <a href="/">Back to Home</a>
+        <h2>Add Cake</h2>
+        <form action="/add" method="POST">
+            <div class="form-control">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required />
+            </div>
+            <div class="form-control">
+                <label for="price">Price:</label>
+                <input type="number" name="price" id="price" min="0" required />
+            </div>
+            <div class="form-control">
+                <input class="no-label" type="submit" value="Add Cake" />
+            </div>
+        </form>
+        <div class="cakes">
+            <ul>
+                {{CAKES}}
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
+
+<style>
+    main {
+        max-width: 980px;
+        margin: 0 auto;
+    }
+
+    form label{
+        display:inline-block;
+        min-width:80px;
+    }
+
+    .form-control{
+        margin-bottom:20px;
+    }
+
+    .no-label{
+        margin-left:83px;
+    }
+</style>

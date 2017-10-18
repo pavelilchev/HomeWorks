@@ -1,0 +1,24 @@
+﻿form{
+    display:inline-block;
+    background-color:#eee;
+    padding:15px;
+}
+
+label{
+    display:inline-block;
+    min-width:95px;
+}
+
+select {
+    padding: 1px 0;
+    width: 63.5%;
+}
+
+div{
+    margin:10px auto;
+}
+
+.nolabel{
+    padding:5px 20px;
+    margin-left:100px;
+}

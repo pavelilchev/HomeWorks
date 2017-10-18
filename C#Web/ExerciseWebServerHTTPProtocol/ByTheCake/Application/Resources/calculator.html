@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form action="/calculator" method="post">
+        <input type="number" name="first-operand" step="0.01" required />
+        <input type="text" name="operator" required />
+        <input type="number" name="second-operand" step="0.01" required />
+        <input type="submit" value="Calculate" />
+    </form>
+    <div>
+        {{RESULT}}
+    </div>
+</body>
+</html>

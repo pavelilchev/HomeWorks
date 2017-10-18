@@ -1,0 +1,36 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <main>
+        <a href="/">Back to Home</a>
+        <h2>Add Cake</h2>
+        <form action="/search" method="get">
+            <div class="form-control">
+                <input type="text" name="search" placeholder="Search..." required />
+                <input type="submit" value="Search" />
+            </div>
+            <div class="form-control">
+
+            </div>
+        </form>
+        <div class="cakes">
+           <ul>
+               {{CAKES}}
+           </ul>
+        </div>
+    </main>
+</body>
+</html>
+
+<style>
+    main {
+        max-width: 980px;
+        margin: 0 auto;
+    }
+
+    .form-control {
+        margin-bottom: 20px;
+    }
+</style>
