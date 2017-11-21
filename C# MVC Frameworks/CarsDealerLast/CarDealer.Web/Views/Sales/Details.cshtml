@@ -1,0 +1,22 @@
+﻿@model SaleModel
+@{
+    ViewData["Title"] = "Details";
+}
+<h2>Details</h2>
+
+<td>
+    <ul>
+        <li>Make - @Model.Car.Make</li>
+        <li>Model - @Model.Car.Model</li>
+        <li>@Model.Car.TravelledDistance KM</li>
+    </ul>
+</td>
+<div>
+    <ul>
+        <li>Name - @Model.Customer.Name</li>
+        <li>Birthday - @Model.Customer.BirthDate.ToShortDateString()</li>
+        <li>Young Driver - @(Model.Customer.IsYoungDriver ? "Yes" : "No")</li>
+    </ul>
+</div>
+<div>@Model.Price</div>
+<div>@Model.Discount</div>

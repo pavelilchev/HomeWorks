@@ -6,7 +6,7 @@
 
         public MvcContext() { }
 
-        public static MvcContext Get => Instance == null ? (Instance = new MvcContext()) : Instance;
+        public static MvcContext Get => Instance ?? (Instance = new MvcContext());
 
         public string AssemblyName { get; set; }
 
